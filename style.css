@@ -1,0 +1,146 @@
+
+body{
+    font-family: "Raleway", sans-serif;
+    
+}
+
+.titre{
+    font-size: 39px;
+}
+ul{
+    list-style: none;  
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+}
+
+a:hover{
+    color: #0065FC;
+}
+ 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_liens_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.liens_header{
+    padding-right:100px;
+}
+
+nav{
+   margin-left: 40px ;
+   
+}
+
+.nav_barre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.barre{
+    padding: 10px;
+    border-style: none;
+    font-weight: bold;
+    
+}
+
+button{
+    padding: 10px;
+    background-color: #0065FC;
+    color: #deebff;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-style: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    
+}
+
+.map-marker{
+    border-style: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 10px;
+    width: 15px; height: 15px;
+    background-color: #f2f2f2;
+}
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0%;
+    align-items: center;
+    border-color:#f2f2f2;
+    border-radius: 39px;
+    font-size: 19px;
+    
+}
+.espace_filtre{
+    padding-left: 10px;
+}
+
+.logo_filtre{
+    padding: 15px;
+    border-radius: 50px;
+    background-color:#deebff;
+    width: 19px; height: 19px;
+    color:#0065FC ;
+}
+
+.lien_filtre{
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color:#f2f2f2 ;
+    border-radius: 45px;
+    padding-right: 19px;
+    font-weight: bold;
+    margin: 0 12px 0 22px;
+}
+
+.logo_info{
+   
+  width: 11px; height: 11px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+#hebergements{
+    display: flex;
+   flex-direction: column;
+    background-color: #f2f2f2;
+}
+.liste_hebergement{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.descriptif{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    border-radius: 26px;
+    
+}
+
+
+.photo{
+    max-width:489px;
+    border-radius:26px;
+}
+
