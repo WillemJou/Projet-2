@@ -4,6 +4,10 @@ body{
     
 }
 
+.flex {
+    display: flex;
+}
+
 .titre{
     font-size: 39px;
 }
@@ -76,9 +80,8 @@ button{
     background-color: #f2f2f2;
 }
 
-.filtres{
+.filtres {
     display: flex;
-    flex-direction: row;
     padding-inline-start: 0%;
     align-items: center;
     border-color:#f2f2f2;
