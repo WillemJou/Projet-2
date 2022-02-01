@@ -8,6 +8,17 @@ body{
 .flex {
     display: flex;
     align-items: center;
+    
+
+   
+}
+
+.flex_align {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    
+
    
 }
 .flex_column{
@@ -41,7 +52,7 @@ a:hover{
 
 header{
     display: flex;
-    flex-direction: row;
+  
     justify-content: space-between;
 }
 
@@ -111,6 +122,9 @@ button{
     width: 19px; height: 19px;
 
 }
+.logO{
+    width: 19px; height: 19px;
+}
 
 .lien_filtre :hover{
     width: 23px; height: 23px;
@@ -155,15 +169,15 @@ main{
     display: flex;
    flex-direction: column;
     background-color: #f2f2f2;
-    border-radius: 29px;
+    border-radius: 21px;
     margin-right: 34px;
     padding: 29px 15px;
    
 }
 .pop{
     background-color: #f2f2f2;
-    border-top-right-radius: 26px ;
-    border-top-left-radius: 26px;
+    border-top-right-radius: 21px ;
+    border-top-left-radius: 21px;
 }
 .mis_en_page{
     display: flex;
@@ -181,16 +195,16 @@ main{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 26px;   
+    border-radius: 21px;   
     margin: 9px;
-    padding: 5px;
+    padding: 5px 5px 11px 5px;
     
 }
 
 .descriptif_2{
     display: flex;
     background-color: white;
-    border-radius: 26px;   
+    border-radius: 21px;   
     margin: 29px;
    
     align-items: center;
@@ -198,6 +212,8 @@ main{
 }
 
 .legende_1{
+    display: flex;
+    flex-direction: column;
     margin: 4px;
 }
 
@@ -208,7 +224,7 @@ main{
     display: flex;
     flex-flow:column wrap;
     
-    border-radius: 26px;
+    border-radius: 21px;
     background-color: #f2f2f2;
 
 }
@@ -225,12 +241,12 @@ main{
 .photo{
     width: 250px; height: 129px;
     border-top-left-radius:26px;
-    border-top-right-radius: 26px;
+    border-top-right-radius: 21px;
 }
 
 .photo_pop{
     width: 50px; height: 98px;
-    border-radius:26px;
+    border-radius:21px;
 }
 
 
