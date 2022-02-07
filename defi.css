@@ -8,89 +8,108 @@ body{
 
 .mon {
     background-color: yellowgreen;
-    width: 100px;
-    height: 70px;
+    padding: 2%;
+    
 }
 
 .petit{
     background-color: tomato;
-    width: 50px;
-    height: 70px;
+    display: flex;
+   
+    padding-left: 40%;
+    padding: 20%;
+   
 }
 .defi{
     background-color: darkslateblue;
-    width: 200px;
-    height: 120px;
+    padding: 7%;
+   
 
 }
 
 .chat{
     background-color: crimson;
-    width: 99px;
-    height: 100px;
+   
 }
 .endormie{
 
     background-color: aquamarine;
-    width: 290px;
-    height: 200px;
+    padding: 6px;
+    width: 89px;
+    height: 300px;
+    
 }
 
 .mange{
     background-color: chocolate;
-    height: 200px;
-    width: 381px;
+   
 
 }
 
 .dans {
     background-color: forestgreen;
-    width: 20%;
-    height: 50%;
+    
 }
 
 .la{
     background-color: darkkhaki;
-    width: 33px;
-    height: 22px;
+    padding-left: 30%;
+   
 }
 .cour{
     background-color: royalblue;
-    height: 212px;
-    width: 788px;
+    padding: 3%;
+    
 }
 
-.vie{
+.vis{
     background-color: lightpink;
-    height: 78%;
-    width: 620px;
+    padding: 2%;
+    
 }
 
 .le{
     background-color: midnightblue;
-    width: 71px;
-    height: 44%;
+    padding-right: 30%;
+
+    
 }
 
 .sourire{
     background-color: thistle;
-    width: 19%;
-    height: 79px;
+    padding: 5%;
+    
 }
 
 .du{
     background-color: rosybrown;
-    width: 89%;
-    height: 26%;
+    
 }
 
 .soir{
     background-color: black;
-    height: 61%;
-    width: 39%;
+    padding-right: 100%;
 }
-.f1{
+
+.f1_2{
     display: flex;
+    flex-direction: row-reverse;
+   
+
+}
+.f3_3{
+    display: flex;
+
+
+}
+
+.master_1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.master_2{
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .center{
@@ -98,7 +117,7 @@ body{
 }
 .f2{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .f3{
@@ -114,9 +133,9 @@ body{
     body{
         background-color: darkblue;
     }
-    .f1{ 
-        display: flex;
-        flex-direction: column-reverse;
+    
+    .f1_2{
+        flex-direction: row;
     }
     .f2{
         display: flex;
@@ -126,21 +145,91 @@ body{
     .f3{
         display: flex;
         
+    }
+    .master_1{
+
+        flex-direction: column-reverse;
+    }
+
+    .master_2{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .endormie{
+
+        height: 20px;
+    }
+    .la{
+        padding: 2%;
     }
 }
 
 @media screen and (max-width: 751px){
-    .f1{ 
-        display: flex;
-        flex-direction: column-reverse;
-    }
+   
     .f2{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction:column-reverse;
     }
 
     .f3{
         display: flex;
+        flex-direction: column;
         
     }
+    .f3_2{
+        flex-direction: column;
+    }
+    .f3_3{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 926px){
+    .soir{
+
+
+    }
+}
+
+@media screen and (max-height:987px){
+    body{
+        background-color: black;
+    }
+
+
+}
+
+@media screen and (max-width:680px) and (max-height:786px){
+         .master_1{
+             flex-direction: row;
+            
+            
+         }   
+         .master_2{
+             flex-direction: column;
+            
+         }
+
+         .f1_3{
+             display: flex;
+         }
+         .f2{
+             flex-direction: row;
+         }
+         .f2_2{
+             display: flex;
+         }
+         .f2_3{
+             display: flex;
+         }
+         .f3{
+             flex-direction: row;
+         }
+         .f3_2{
+             display: flex;
+
+         }
+         
+
+
 }
