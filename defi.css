@@ -1,0 +1,146 @@
+
+    
+
+body{
+    color: bisque;
+    background-color: silver;
+}
+
+.mon {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 70px;
+}
+
+.petit{
+    background-color: tomato;
+    width: 50px;
+    height: 70px;
+}
+.defi{
+    background-color: darkslateblue;
+    width: 200px;
+    height: 120px;
+
+}
+
+.chat{
+    background-color: crimson;
+    width: 99px;
+    height: 100px;
+}
+.endormie{
+
+    background-color: aquamarine;
+    width: 290px;
+    height: 200px;
+}
+
+.mange{
+    background-color: chocolate;
+    height: 200px;
+    width: 381px;
+
+}
+
+.dans {
+    background-color: forestgreen;
+    width: 20%;
+    height: 50%;
+}
+
+.la{
+    background-color: darkkhaki;
+    width: 33px;
+    height: 22px;
+}
+.cour{
+    background-color: royalblue;
+    height: 212px;
+    width: 788px;
+}
+
+.vie{
+    background-color: lightpink;
+    height: 78%;
+    width: 620px;
+}
+
+.le{
+    background-color: midnightblue;
+    width: 71px;
+    height: 44%;
+}
+
+.sourire{
+    background-color: thistle;
+    width: 19%;
+    height: 79px;
+}
+
+.du{
+    background-color: rosybrown;
+    width: 89%;
+    height: 26%;
+}
+
+.soir{
+    background-color: black;
+    height: 61%;
+    width: 39%;
+}
+.f1{
+    display: flex;
+}
+
+.center{
+   text-align: center;
+}
+.f2{
+    display: flex;
+    flex-direction: column;
+}
+
+.f3{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.f4{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-color: darkblue;
+    }
+    .f1{ 
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .f2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .f3{
+        display: flex;
+        
+    }
+}
+
+@media screen and (max-width: 751px){
+    .f1{ 
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .f2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .f3{
+        display: flex;
+        
+    }
+}
