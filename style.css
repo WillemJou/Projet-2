@@ -1,4 +1,5 @@
 
+
 body{
     font-family: "Raleway", sans-serif;
   margin:0px;
@@ -379,10 +380,32 @@ footer h3{
 }
 
 
-@media screen and (max-width: 1793px) {
+@media screen and (max-width: 1529px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    
 
     header{
         gap: 68px;
+        justify-content: space-between;
+    }
+
+    .partie_recherche{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info{
+        justify-content: center;
+       
+    }
+    
+    h2{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
     }
    
     .container{
@@ -390,20 +413,50 @@ footer h3{
     }
 
     .mis_en_page{
-
         flex-direction: column;
 
     }
-    #hebergements{
+    #hebergements {
+       
+        align-items: center;
+        margin-bottom: 20px;
+        
 
-        width: 70%;
     }
+
     .liste_1{
         justify-content: space-evenly;
     }
+    .liste_activites{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .liste_plus_populaires{
+        flex-flow:row nowrap;
+        align-items: center;
+        
+    }
+    
+    .les_plus_populaires{
+        margin-right: 34px;
+        
+   
+    }
+    .plus{
+       
+        gap:10%;
+    align-items: baseline;
+    justify-content: center;
+   
+    
+    
+    }
+    footer{
+        width:100%;
+    }
 }
 
-@media screen and (max-width: 1470px){
+@media screen and (max-width: 1229px){
 
     .liste_1{
         flex-wrap: wrap;
@@ -411,15 +464,42 @@ footer h3{
    
 }
 
-@media screen and (max-width: 1229px){
+
+@media screen and (max-width: 992px){
+  
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .partie_recherche{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .filtres{
         flex-direction: column;
-        align-items: flex-start;
+       
+    }
+    .recherche{
+        justify-content: center;
+    }
+
+    .info{
+        display: flex;
+        justify-content: center;
     }
     #hebergements{
 
-        width: 80%;
+        
     }
-
+    .mis_en_page{
+        align-items: center;
+    }
+    #activites{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
