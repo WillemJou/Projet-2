@@ -3,8 +3,10 @@
 body{
     font-family: "Raleway", sans-serif;
   margin:0px;
+  overflow-x: none;
    
 }
+
 
 
 .flex_filtres{
@@ -414,6 +416,7 @@ footer h3{
 
     .mis_en_page{
         flex-direction: column;
+        width: 99%;
 
     }
     #hebergements {
@@ -423,13 +426,17 @@ footer h3{
         
 
     }
+    #activites{
+        width: 99%;
+    }
 
     .liste_1{
         justify-content: space-evenly;
     }
     .liste_activites{
         flex-direction: row;
-        flex-wrap: nowrap;
+       
+        
     }
     .liste_plus_populaires{
         flex-flow:row nowrap;
@@ -456,50 +463,11 @@ footer h3{
     }
 }
 
-@media screen and (max-width: 1229px){
-
-    .liste_1{
-        flex-wrap: wrap;
-    }
-   
-}
 
 
 @media screen and (max-width: 992px){
-  
-    header{
-        flex-direction: column;
-        align-items: center;
-        gap: 0px;
-    }
-    .partie_recherche{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .filtres{
-        flex-direction: column;
-       
-    }
-    .recherche{
-        justify-content: center;
-    }
-
-    .info{
-        display: flex;
-        justify-content: center;
-    }
-    #hebergements{
-
-        
-    }
-    .mis_en_page{
-        align-items: center;
-    }
-    #activites{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .filtres{
+      flex-direction: column;
+  }
+   
 }
