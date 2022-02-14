@@ -2,12 +2,17 @@
 
 body{
     font-family: "Raleway", sans-serif;
-  margin:0px;
+ margin: 0;
   overflow-x: none;
+ 
    
 }
 
 
+
+ul{
+    padding-inline-start:  0;
+}
 
 .flex_filtres{
     display: flex;
@@ -17,29 +22,48 @@ body{
 
 .flex_align {
     display: flex;
-    align-items: center;
-    padding-left: 5px;
+    padding: 0.3vh 0.8vw 1.2vh 0.8vw;
+
+}
+
+.flex_align_2 {
+    display: flex;
+    padding: 7.3vh 0.8vw 1.2vh 0.8vw;
+
+}
+
+.flex_align_3 {
+    display: flex;
+    padding: 5.3vh 0.8vw 1.2vh 0.8vw;
 
 }
    
 .flex_column{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    
-   
 }
-.les_plus_populaires{
+
+.flex_column_1{
     display: flex;
     flex-direction: column;
-  
-    
+    gap: 3vh;
+}
+
+h2{
+    padding-bottom: 7px;
+    margin-left: 0.8vw;
+}
+h3{
+    font-size: 1.5vw;
+}
+.h3_activites{
+    margin: 1vh 0.2vw 0.6vh 1.3vw;
+    font-size: 1vw;
 }
 
 li{
     list-style: none;
-    margin-left: 22px;
+    cursor: pointer;
  
 }
 
@@ -50,53 +74,45 @@ a{
     
 }
  p{
-     margin-left: 22px;
+     margin: 5px;
+     font-size: 1vw
  }
 
+
+
 .p_info{
-    margin-bottom: 19px;
-    margin-left: 5px;
+    margin-bottom: ;
+    margin-left: ;
 }
 .afficher_plus{
     font-weight: bold;
-    padding: 9px;
+    cursor: pointer;
 }
 
 
-h2 {
-    margin-left: 20px;
+.titre_recherche {
+    font-size: 2vw;
+    margin-bottom: 5px;
 }
-
-h3 {
-    margin-left: 22px;
-}
-
-
-
-
-
 
 header{
     display: flex;
-    margin: 0px 22px;
-    gap: 620px;
+    justify-content: space-between;
 
 
 }
 
 .container{
     display: flex;
-    gap: 200px;
+    gap: 60px;
 }
 
 .container_liens_header{
-
+    width: 12vw;
+    
     display: flex;
     align-items: center;
-    gap: 179px;
     border-top: transparent solid 2px;
-    width: 171px;
-    padding: 5px;
     justify-content: center;
      
 }
@@ -117,33 +133,38 @@ a:hover{
  }
 
 .partie_recherche{
-    margin: 0px 22px;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 1vw;
+
 }
 .recherche{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 29px;
-    margin-bottom: 19px;
+    padding-top: 1.5vw;
+   
 
 }
 
 .barre{
-    padding: 10px;
+    color: black;
     border-style: none;
     font-weight: bold;
-    
+    font-size: 1vw;
+    padding: 14px;
 }
 
 button{
-    padding: 10px;
+    
     background-color: #0065FC;
     color: #deebff;
+    padding: 15px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     border-style: none;
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     
 }
 
@@ -151,31 +172,51 @@ button{
     border-style: none;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    padding: 10px;
-    width: 15px; height: 15px;
+    width: 19px; height: 19px;
+    padding: 15px;
     background-color: #f2f2f2;
-     margin-left: 22px;
+   
   
 }
 
-.filtres {
+.partie_filtres {
     display: flex;
-    padding-inline-start: 0%;
-    align-items: center;
     border-color:#f2f2f2;
     border-radius: 39px;
-    font-size: 19px;
     
 }
+
+.flex_filtres{
+    display: flex;
+
+}
+
+.filtres{
+    margin: 0 2vw;
+
+}
+
+.lien_filtre{
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    padding: 1px 14px 1px 0;
+    border-color: rgb(201, 196, 196);
+    border-radius: 45px;
+    font-weight: bold;
+    
+}
+
 .espace_filtre{
-    padding-left: 10px;
+    padding: 0 0.4vw ;
 }
 
 .logo_filtre{
-    padding: 15px;
+   padding: 14px;
     border-radius: 50px;
     background-color:#deebff;
-    width: 19px; height: 19px;
+    width: 22px; height: 22px;
    
 
 }
@@ -185,21 +226,8 @@ button{
    
 }
 
-
-.lien_filtre{
-    display: flex;
-    align-items: center;
-    border-style: solid;
-    border-color:#f2f2f2 ;
-    border-radius: 45px;
-    padding-right: 19px;
-    font-weight: bold;
-    
-}
-
 .logo_info{
-    padding: 5px;
-    margin-left: 22px;
+   
     border-style: solid;
     border-color:#f2f2f2 ;
     border-radius: 50px;
@@ -213,46 +241,54 @@ button{
 .info{
     display: flex;
     align-items: center;
-   margin: 0px 22px;
+    margin: 1vh 1vw;
+   
 }
 .plus{
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 22px;
-    padding-top: 29px;
-    background-color: #f2f2f2;
-    border-top-left-radius:21px;
-    border-top-right-radius: 21px;
 
 }
 
 main{
+    width: 98vw;
+    margin: 3vh 1vw 0 1vw;
     display: flex;
     align-content: flex-start;
     flex-flow: column wrap;
-    margin: 0px 22px;
+    
 }
 #hebergements{
     display: flex;
    flex-direction: column;
     background-color: #f2f2f2;
     border-radius: 21px;
-    margin-right: 34px;
-    padding: 26px 15px;
-
+    padding: 3vh 0.5vw 3vh 2.5vw;
    
+}
+
+.les_plus_populaires{
+    display: flex;
+    flex-direction: column;
+    padding: 3.5vh 2.5vw 0 2.5vw;
+    margin-left: 2vw;
+    background-color: #f2f2f2;
+    border-radius: 21px;
+    border-radius: 21px;
+  
 }
 
 .mis_en_page{
     display: flex;
     flex-flow: row nowrap;
+    margin-bottom: 4vh;
    
 }
 .liste_1{
     display: flex;
-    justify-content: space-around;
+    
    
 }
 
@@ -260,23 +296,26 @@ main{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 18px;   
-    margin: 9px;
-    padding: 3px 3px 11px 3px;
+    border-radius: 18px;
+    margin-right: 2.5vw;  
+    margin-bottom: 4vh;
     cursor: pointer;
+    padding: 0.2vh 0.4vw 0.2vh 0.1vw;
     box-shadow: 3px 4px 2px #1d1d1d1c;
-    
+    width: 16vw;
+    height: 24.2vh;
 }
 
 .descriptif_2{
     display: flex;
     background-color: white;
     border-radius: 18px;  
-    padding: 3px 3px 0 4px;
-    margin: 29px 29px 0;
-    align-items: center;
     cursor: pointer;
     box-shadow: 3px 4px 2px #1d1d1d1c;
+    margin-bottom: 3vh;
+    padding: 0.2vh 2vw 0 0.2vw;
+    height: 16.2vh;
+    width: 23vw;
 
 }
 
@@ -285,9 +324,8 @@ main{
     flex-direction: column;
     background-color: white;
     border-radius: 15px;  
-    margin: 0 9px 9px 9px;
-    padding-bottom: 10px;
-    width: 305px; height: 400px;
+    width: 20vw;
+    height: 45vh;
     cursor: pointer;
     box-shadow: 3px 4px 4px #1d1d1d5b;
 
@@ -298,65 +336,85 @@ main{
     flex-direction: column;
     background-color: white;
     border-radius: 18px;   
-    margin: 0 9px 9px 9px;
+    height: 21vh;
     cursor: pointer;
     box-shadow: 3px 4px 2px #1d1d1d5b;
     
 }
 
 .legende_1{
-  
-    margin: 4px;
+    margin-top: 0.3vh;
+    margin-bottom: 0;
+  font-size: 1vw;
+  margin-left: 0.7vw;
+   
+}
+.legende_2{
+    margin-top: 0.7vh;
+    margin-bottom: 0;
+    font-size: 0.9vw;
+    margin-left: 0.7vw;
 }
 
+.legende_3{
+    margin-top: 1.3vh;
+    margin-bottom: 0;
+  font-size: 1vw;
+  margin-left: 0.7vw;
+   
+}
 
 
 
 .liste_plus_populaires{
     display: flex;
     flex-flow:column wrap;
-    padding-bottom: 60px;
+   
     border-bottom-left-radius: 21px;
     border-bottom-right-radius: 21px;
     background-color: #f2f2f2;
 
 }
 #activites{
-    margin: 39px 0;
-    padding: 29px 25px;
+   width: ;
 }
 .liste_activites{
     display: flex;
-    flex-wrap: wrap;
-    gap: 56px;
-    width: 100%; height: 100%;
+    gap: 4vw;
+    justify-content: space-evenly;
     border-radius: 26px;
-
+    
 }
 
 
+
+
 .photo{
-    width: 250px; height: 129px;
+    width: 16.3vw;
+    height: 16vh;
     border-top-left-radius:15px;
     border-top-right-radius: 15px;
     
 }
 
 .photo_fin{
-    width: 270px; height: 140px;
+    width: 17vw;
+    height: 16vh;
     border-top-left-radius:15px;
     border-top-right-radius: 15px;
     
 }
 
 .photo_pop{
-    width: 129px; height: 132px;
+    width: 9vw;
+    height: 16vh;
     border-bottom-left-radius:15px;
     border-top-left-radius:15px;
 }
 
 .photo_haute{
-    width: 305px; height: 349px;
+    width: 20vw;
+    height: 40vh;
     border-top-left-radius:15px;
     border-top-right-radius: 15px;
 }
@@ -365,109 +423,23 @@ footer{
     display: flex;
     gap: 200px;
     background-color: #f2f2f2;
+    margin-top: 6vh;
+    padding: 1vh 2.5vw 3.8vh 3.5vw;
+    margin-left: 0;
+    margin-bottom: 0;
 
 
 }
 
 footer h3{
-    margin-bottom: 0px;
+   
 }
 
 
 .article_footer{
     display: flex;
     flex-direction: column;
-    padding-bottom: 39px;
-    margin: 0 0 0 29px;
+    
 }
 
 
-@media screen and (max-width: 1529px) {
-    body{
-        display: flex;
-        flex-direction: column;
-    }
-    
-
-    header{
-        gap: 68px;
-        justify-content: space-between;
-    }
-
-    .partie_recherche{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .info{
-        justify-content: center;
-       
-    }
-    
-    h2{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-   
-    .container{
-        gap: 0px;
-    }
-
-    .mis_en_page{
-        flex-direction: column;
-        width: 99%;
-
-    }
-    #hebergements {
-       
-        align-items: center;
-        margin-bottom: 20px;
-        
-
-    }
-    #activites{
-        width: 99%;
-    }
-
-    .liste_1{
-        justify-content: space-evenly;
-    }
-    .liste_activites{
-        flex-direction: row;
-       
-        
-    }
-    .liste_plus_populaires{
-        flex-flow:row nowrap;
-        align-items: center;
-        
-    }
-    
-    .les_plus_populaires{
-        margin-right: 34px;
-        
-   
-    }
-    .plus{
-       
-        gap:10%;
-    align-items: baseline;
-    justify-content: center;
-   
-    
-    
-    }
-    footer{
-        width:100%;
-    }
-}
-
-
-
-@media screen and (max-width: 992px){
-  .filtres{
-      flex-direction: column;
-  }
-   
-}
