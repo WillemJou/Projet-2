@@ -20,23 +20,6 @@ ul{
 
 }
 
-.flex_align {
-    display: flex;
-    padding: 0.3vh 0.8vw 1.2vh 0.8vw;
-
-}
-
-.flex_align_2 {
-    display: flex;
-    padding: 7.3vh 0.8vw 1.2vh 0.8vw;
-
-}
-
-.flex_align_3 {
-    display: flex;
-    padding: 5.3vh 0.8vw 1.2vh 0.8vw;
-
-}
    
 .flex_column{
     display: flex;
@@ -54,11 +37,11 @@ h2{
     margin-left: 0.8vw;
 }
 h3{
-    font-size: 1.5vw;
+    font-size: 19px;
 }
 .h3_activites{
     margin: 1vh 0.2vw 0.6vh 1.3vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 li{
@@ -75,15 +58,10 @@ a{
 }
  p{
      margin: 5px;
-     font-size: 1vw
+     font-size: 17px
  }
 
 
-
-.p_info{
-    margin-bottom: ;
-    margin-left: ;
-}
 .afficher_plus{
     font-weight: bold;
     cursor: pointer;
@@ -91,7 +69,7 @@ a{
 
 
 .titre_recherche {
-    font-size: 2vw;
+    font-size: 29px;
     margin-bottom: 5px;
 }
 
@@ -151,7 +129,7 @@ a:hover{
     color: black;
     border-style: none;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 9px;
     padding: 14px;
 }
 
@@ -234,7 +212,8 @@ button{
   width: 11px; height: 11px;
 }
 .etoile{
-    width: 11px; height: 11px;
+    width: 0.6vw;
+    height: 1vh;
     display: flex;
 }
 
@@ -303,7 +282,7 @@ main{
     padding: 0.2vh 0.4vw 0.2vh 0.1vw;
     box-shadow: 3px 4px 2px #1d1d1d1c;
     width: 16vw;
-    height: 24.2vh;
+    height: 25.2vh;
 }
 
 .descriptif_2{
@@ -337,6 +316,7 @@ main{
     background-color: white;
     border-radius: 18px;   
     height: 21vh;
+    width: 17vw;
     cursor: pointer;
     box-shadow: 3px 4px 2px #1d1d1d5b;
     
@@ -345,23 +325,47 @@ main{
 .legende_1{
     margin-top: 0.3vh;
     margin-bottom: 0;
-  font-size: 1vw;
+  font-size: 1.1vw;
   margin-left: 0.7vw;
    
 }
 .legende_2{
     margin-top: 0.7vh;
     margin-bottom: 0;
-    font-size: 0.9vw;
+    font-size: 1vw;
     margin-left: 0.7vw;
 }
 
 .legende_3{
     margin-top: 1.3vh;
     margin-bottom: 0;
-  font-size: 1vw;
+  font-size: 1.1vw;
   margin-left: 0.7vw;
    
+}
+
+.flex_align {
+    display: flex;
+    padding: 0.9vh 0.8vw 1.2vh 0.8vw;
+
+}
+
+.flex_align_2 {
+    display: flex;
+    padding: 6.3vh 0.8vw 1.2vh 0.8vw;
+
+}
+
+.flex_align_3 {
+    display: flex;
+    padding: 3.6vh 0.8vw 1.2vh 0.8vw;
+
+}
+
+.flex_align_4 {
+    display: flex;
+    padding: 6.5vh 0.8vw 1.2vh 0.8vw;
+
 }
 
 
@@ -375,9 +379,7 @@ main{
     background-color: #f2f2f2;
 
 }
-#activites{
-   width: ;
-}
+
 .liste_activites{
     display: flex;
     gap: 4vw;
@@ -431,14 +433,319 @@ footer{
 
 }
 
-footer h3{
-   
-}
-
 
 .article_footer{
     display: flex;
     flex-direction: column;
+    
+}
+
+
+
+@media screen and (max-width:992px) {
+
+    header{
+        justify-content: space-around;
+    }
+
+    .partie_recherche{
+        align-items: center;
+    }
+
+    .partie_filtres{
+        flex-direction: column;
+
+    }
+
+
+    .info{
+        justify-content: center;
+    }
+
+    .titre_filtre{
+        text-align: middle;
+    }
+    .mis_en_page{
+        flex-direction: column;
+    }
+    #hebergements{
+        width: 91vw;
+        margin-left: 2vw;
+        align-items: center;
+        padding: 3vh 0.5vw 1vh 0.5vw;
+    }
+    .liste_1{
+        justify-content: center;
+        gap: 4vw;
+    }
+    .descriptif{
+        margin-right: 0;
+        width: 25vw;
+    }
+    .photo{
+        width: 25.3vw;
+    }
+
+    .afficher_plus{
+        display: flex;
+        justify-content: center;
+    }
+
+    .les_plus_populaires{
+        margin-top: 8vh;
+    }
+
+    .plus{
+        justify-content: center;
+        align-items: baseline;
+        gap: 1vw;
+    }
+    .liste_plus_populaires{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    #activites{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .legende_1{
+        font-size: 1.8vw;
+    }
+    .legende_2{
+        font-size: 1.5vw;
+    }
+    .legende_3{
+        font-size: 1.7vw;
+    }
+
+    .flex_align_2{
+        width: 1vw;
+        height: 0.8vh;
+    }
+
+    .flex_align_3{
+        padding: 3vh 0.8vw 1.2vh 0.8vw;
+    }
+
+    .flex_align_4{
+        padding: 3.4vh 0.8vw 1.2vh 0.8vw;
+    }
+
+    .etoile{
+        width: 1vw;
+        height: 0.8vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    h2{
+        margin-left: 4vw;
+        padding-bottom: 0;
+    }
+
+    main{
+        width: 100vw;
+        margin: 3vh 0;
+        align-content: stretch;
+
+    }
+    
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .container_liens_header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+       border-top: none 0;
+        border-bottom: transparent solid 2px;
+        justify-content: center;
+        padding-bottom: 1vh; 
+    }
+
+    .container_liens_header:hover{
+        color: #0065FC;
+        border-top: none 0;
+        border-bottom: #0065FC solid 2px;
+     }
+     a{
+        border-top: none 0;
+        border-bottom: transparent solid 2px;
+     }
+     .BOOKI{
+         margin: 3vw;
+         padding-left: 10vw;
+     }
+
+    .titre_filtre{
+        margin: 3vh 3vw;
+    }
+    
+    .flex_filtres{
+        flex-wrap: wrap;
+    }
+
+    .mis_en_page{
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+    
+    .les_plus_populaires{
+        margin-top: 0;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .liste_plus_populaires{
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 4vh;
+        
+    }
+    .descriptif_2{
+        margin-bottom: 2vh;
+    }
+
+    .plus{
+        justify-content: space-between;
+    }
+    #hebergements {
+        background-color: transparent;
+       align-items: flex-start;
+       margin-bottom: 5vh;
+       margin-top: 5vh;
+    }
+
+    .liste_1{
+        flex-direction: column;
+        gap:0;
+        
+        
+    }
+    .h3_activites{
+        font-size: 2.9vw;
+    }
+    
+    .legende_1{
+        font-size: 3.3vw;
+    }
+    .legende_2{
+        font-size: 2.6vw;
+    }
+    .legende_3{
+        font-size: 3.3vw;
+    }
+
+    .flex_align_2{
+        width: 1vw;
+        height: 0.8vh;
+    }
+
+    .flex_align_3{
+        padding: 3vh 0.8vw 1.2vh 0.8vw;
+    }
+
+    .flex_align_4{
+        padding: 3.4vh 0.8vw 1.2vh 0.8vw;
+    }
+
+    .etoile{
+        width: 1.7vw;
+    height: 1vh;
+    
+    }
+
+    .flex_align{
+        padding: 1.2vh 0.8vw 1.2vh 0.8vw;
+    }
+
+    
+
+    .descriptif{
+        margin-bottom: 4vh;
+        margin-left: 4vw;
+        width: 83vw;
+        height: 41vh;
+    }
+    .afficher_plus{
+        justify-content: flex-start;
+    }
+
+    #activites{
+        align-items: flex-start;
+    }
+
+    .liste_activites{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .descriptif_2{
+        height: 26.2vh;
+    width: 83vw;
+    margin-bottom: 4vh;
+    }
+
+    .photo_pop{
+        width: 35vw;
+    height: 26vh;
+    }
+
+    .photo{
+
+        width: 83.3vw;
+        height: 29vh;
+    }
+    .photo_fin{
+
+        width: 83.3vw;
+        height: 29vh;
+    }
+
+    .photo_haute{
+        width: 83.3vw;
+        height: 29vh;
+
+    }
+
+    .descriptif_haute{
+        width: 83.3vw;
+    height: 39vh;
+    margin: 3vh 7vw;
+    }
+
+    .descriptif_petite{
+        margin: 3vh 7vw;
+        height: 39vh;
+        width: 83.3vw;
+    }
+
+    .flex_column_1{
+        margin: 2vh 0;
+    }
+
+
+
+
+    footer{
+        flex-direction: column;
+        gap: 0;
+
+    }
+    
+    .article_footer{
+        margin-bottom: 3vh;
+
+    }
     
 }
 
