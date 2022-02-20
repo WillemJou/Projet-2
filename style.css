@@ -17,13 +17,21 @@ ul{
 .flex_filtres{
     display: flex;
     align-items: center;
-
+    gap: 4vw;
 }
 
+.flex_column_0{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 2vw;
+}
    
 .flex_column{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .flex_column_1{
@@ -32,16 +40,26 @@ ul{
     gap: 3vh;
 }
 
+.flex_column_2{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
 h2{
-    padding-bottom: 7px;
-    margin-left: 0.8vw;
+    padding-bottom: 2vh;
+}
+
+
+.titre_pop{
+    margin-left: 0.2vw;
 }
 h3{
     font-size: 19px;
 }
 .h3_activites{
-    margin: 1vh 0.2vw 0.6vh 1.3vw;
-    font-size: 1.2vw;
+    margin: 1.2vh 0 0.6vh 0.7vw;
+    font-size: 19px;
 }
 
 li{
@@ -63,6 +81,7 @@ a{
 
 
 .afficher_plus{
+
     font-weight: bold;
     cursor: pointer;
 }
@@ -82,7 +101,7 @@ header{
 
 .container{
     display: flex;
-    gap: 60px;
+    
 }
 
 .container_liens_header{
@@ -113,7 +132,7 @@ a:hover{
 .partie_recherche{
     display: flex;
     flex-direction: column;
-    margin: 1vh 1vw;
+    margin: 1vh 2vw;
 
 }
 .recherche{
@@ -129,7 +148,7 @@ a:hover{
     color: black;
     border-style: none;
     font-weight: bold;
-    font-size: 9px;
+    font-size: 15px;
     padding: 14px;
 }
 
@@ -153,6 +172,7 @@ button{
     width: 19px; height: 19px;
     padding: 15px;
     background-color: #f2f2f2;
+    object-fit:contain;
    
   
 }
@@ -161,16 +181,13 @@ button{
     display: flex;
     border-color:#f2f2f2;
     border-radius: 39px;
+   gap: 3vw;
     
 }
 
 .flex_filtres{
-    display: flex;
-
-}
-
-.filtres{
-    margin: 0 2vw;
+   display: flex;
+   
 
 }
 
@@ -178,11 +195,23 @@ button{
     display: flex;
     align-items: center;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     padding: 1px 14px 1px 0;
-    border-color: rgb(201, 196, 196);
+    border-color: #f2f2f2;
     border-radius: 45px;
     font-weight: bold;
+  
+    
+}
+.lien_filtre :hover {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+
+}
+
+.filtres :hover{
+    border-color: #0065FC;
+    border-width: 1px;
     
 }
 
@@ -195,14 +224,25 @@ button{
     border-radius: 50px;
     background-color:#deebff;
     width: 22px; height: 22px;
-   
+    object-fit: contain;
+    
 
 }
+
+.logo_filtre :hover{
+    border-color: #0065FC;
+    
+}
+
 
 .logO{
     width: 19px; height: 19px;
+    cursor: pointer;
+   object-fit: contain;
    
 }
+
+
 
 .logo_info{
    
@@ -210,32 +250,32 @@ button{
     border-color:#f2f2f2 ;
     border-radius: 50px;
   width: 11px; height: 11px;
+  object-fit: contain;
 }
+
 .etoile{
-    width: 0.6vw;
-    height: 1vh;
+    width: 12px;
+    
     display: flex;
+    object-fit: contain;
 }
 
 .info{
     display: flex;
     align-items: center;
-    margin: 1vh 1vw;
+    margin: 1vh 2vw;
    
 }
 .plus{
 
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 
 }
 
 main{
-    width: 98vw;
-    margin: 3vh 1vw 0 1vw;
     display: flex;
-    align-content: flex-start;
     flex-flow: column wrap;
     
 }
@@ -244,7 +284,7 @@ main{
    flex-direction: column;
     background-color: #f2f2f2;
     border-radius: 21px;
-    padding: 3vh 0.5vw 3vh 2.5vw;
+    padding: 3vh 2vw 3vh 0;
    
 }
 
@@ -252,7 +292,7 @@ main{
     display: flex;
     flex-direction: column;
     padding: 3.5vh 2.5vw 0 2.5vw;
-    margin-left: 2vw;
+  
     background-color: #f2f2f2;
     border-radius: 21px;
     border-radius: 21px;
@@ -261,40 +301,53 @@ main{
 
 .mis_en_page{
     display: flex;
-    flex-flow: row nowrap;
+    flex-wrap: nowrap;
     margin-bottom: 4vh;
+    justify-content: space-between;
+   
    
 }
 .liste_1{
     display: flex;
+    gap: 2vw;
     
+}
+
+.liste_2{
+    display: flex;
+    gap: 2vw;
    
+}
+
+#activites{
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
 }
 
 .descriptif{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     background-color: white;
-    border-radius: 18px;
-    margin-right: 2.5vw;  
+    border-radius: 9px;  
     margin-bottom: 4vh;
     cursor: pointer;
-    padding: 0.2vh 0.4vw 0.2vh 0.1vw;
+    padding: 0.2vh 0.4vw 1vh 0.1vw;
     box-shadow: 3px 4px 2px #1d1d1d1c;
-    width: 16vw;
-    height: 25.2vh;
+    width: 275px;
+    height: 206px;
 }
 
 .descriptif_2{
     display: flex;
     background-color: white;
-    border-radius: 18px;  
+    border-radius: 9px;  
     cursor: pointer;
     box-shadow: 3px 4px 2px #1d1d1d1c;
-    margin-bottom: 3vh;
-    padding: 0.2vh 2vw 0 0.2vw;
-    height: 16.2vh;
-    width: 23vw;
+    padding: 0.2vh 1vw 0 0.2vw;
+    height: 139px;
+    width: 421px;
 
 }
 
@@ -302,9 +355,9 @@ main{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 15px;  
-    width: 20vw;
-    height: 45vh;
+    border-radius: 9px;  
+    width: 322px;
+    height: 404px;
     cursor: pointer;
     box-shadow: 3px 4px 4px #1d1d1d5b;
 
@@ -314,9 +367,9 @@ main{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 18px;   
-    height: 21vh;
-    width: 17vw;
+    border-radius: 9px;   
+    height: 187px;
+    width: 274px;
     cursor: pointer;
     box-shadow: 3px 4px 2px #1d1d1d5b;
     
@@ -325,46 +378,53 @@ main{
 .legende_1{
     margin-top: 0.3vh;
     margin-bottom: 0;
-  font-size: 1.1vw;
+  font-size: 17px;
   margin-left: 0.7vw;
    
 }
 .legende_2{
+    display: flex;
+
     margin-top: 0.7vh;
     margin-bottom: 0;
-    font-size: 1vw;
+    font-size: 17px;
     margin-left: 0.7vw;
 }
 
 .legende_3{
     margin-top: 1.3vh;
     margin-bottom: 0;
-  font-size: 1.1vw;
+  font-size: 17px;
   margin-left: 0.7vw;
    
 }
 
 .flex_align {
     display: flex;
-    padding: 0.9vh 0.8vw 1.2vh 0.8vw;
+    margin-left: 0.7vw;
+    margin-top: 0.7vh;
+    
 
 }
 
 .flex_align_2 {
     display: flex;
-    padding: 6.3vh 0.8vw 1.2vh 0.8vw;
+    margin: 0.4vh 0.7vw;
+   
 
 }
 
 .flex_align_3 {
     display: flex;
-    padding: 3.6vh 0.8vw 1.2vh 0.8vw;
+    margin: 0.4vh 0.7vw;
+   
 
 }
 
 .flex_align_4 {
     display: flex;
-    padding: 6.5vh 0.8vw 1.2vh 0.8vw;
+    margin:  0.4vh 0.7vw;
+   
 
 }
 
@@ -373,17 +433,16 @@ main{
 .liste_plus_populaires{
     display: flex;
     flex-flow:column wrap;
-   
-    border-bottom-left-radius: 21px;
-    border-bottom-right-radius: 21px;
+    gap:4vh;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
     background-color: #f2f2f2;
 
 }
 
 .liste_activites{
     display: flex;
-    gap: 4vw;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 26px;
     
 }
@@ -392,41 +451,45 @@ main{
 
 
 .photo{
-    width: 16.3vw;
-    height: 16vh;
-    border-top-left-radius:15px;
-    border-top-right-radius: 15px;
+    width: 282px;
+    height: 130px;
+    border-top-left-radius:9px;
+    border-top-right-radius: 9px;
+    object-fit: cover;
     
 }
 
 .photo_fin{
-    width: 17vw;
-    height: 16vh;
-    border-top-left-radius:15px;
-    border-top-right-radius: 15px;
+    width: 274px;
+    height: 136px;
+    border-top-left-radius:9px;
+    border-top-right-radius: 9px;
+    object-fit: cover;
     
 }
 
 .photo_pop{
-    width: 9vw;
-    height: 16vh;
-    border-bottom-left-radius:15px;
-    border-top-left-radius:15px;
+    width: 146px;
+    height: 137px;
+    border-bottom-left-radius:9px;
+    border-top-left-radius:9px;
+    object-fit: cover;
 }
 
 .photo_haute{
-    width: 20vw;
-    height: 40vh;
-    border-top-left-radius:15px;
-    border-top-right-radius: 15px;
+    width: 322px;
+    height: 348px;
+    border-top-left-radius:9px;
+    border-top-right-radius: 9px;
+    object-fit: cover;
 }
 
 footer{
     display: flex;
-    gap: 200px;
+    justify-content: space-between;
     background-color: #f2f2f2;
     margin-top: 6vh;
-    padding: 1vh 2.5vw 3.8vh 3.5vw;
+    padding: 1vh 13.5vw 3.8vh 5.5vw;
     margin-left: 0;
     margin-bottom: 0;
 
@@ -440,6 +503,65 @@ footer{
     
 }
 
+@media screen and (max-width:1485px){
+
+    .mis_en_page{
+        flex-direction: column;
+        gap: 2vh;
+        margin: 1vh 4vw;
+    }
+
+    .les_plus_populaires{
+        padding-bottom: 3%;
+    }
+    .liste_plus_populaires{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .info{
+        margin: 1vh 4vw;
+    }
+
+    .partie_recherche{
+        margin: 1vh 4vw;
+    }
+
+    main{
+        gap: 2vh;
+    }
+    .plus{
+        justify-content: flex-start;
+        gap: 1vw;
+    }
+
+    .liste_1{
+        width: 100%;
+       justify-content: space-evenly;
+    }
+    .liste_2{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+
+
+    
+
+}
+@media screen and (max-width:1261px){
+
+    .liste_activites{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vw;
+    }
+    .flex_column_2{
+        flex-direction: row;
+        gap: 3vh;
+    }
+
+}
 
 
 @media screen and (max-width:992px) {
@@ -448,15 +570,26 @@ footer{
         justify-content: space-around;
     }
 
+    .container_liens_header{
+        width: 20vw;
+    }
+
     .partie_recherche{
         align-items: center;
     }
 
-    .partie_filtres{
-        flex-direction: column;
-
+    .flex_column_0{
+        align-items: center;
     }
-
+    .flex_filtres{
+        flex-wrap: wrap;
+    
+    }
+    .partie_filtres{
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .info{
         justify-content: center;
@@ -468,81 +601,111 @@ footer{
     .mis_en_page{
         flex-direction: column;
     }
-    #hebergements{
-        width: 91vw;
-        margin-left: 2vw;
-        align-items: center;
-        padding: 3vh 0.5vw 1vh 0.5vw;
-    }
-    .liste_1{
-        justify-content: center;
-        gap: 4vw;
-    }
-    .descriptif{
-        margin-right: 0;
-        width: 25vw;
-    }
-    .photo{
-        width: 25.3vw;
-    }
-
+    
     .afficher_plus{
         display: flex;
-        justify-content: center;
-    }
-
-    .les_plus_populaires{
-        margin-top: 8vh;
+    
     }
 
     .plus{
-        justify-content: center;
-        align-items: baseline;
-        gap: 1vw;
+     justify-content: center;
     }
     .liste_plus_populaires{
         flex-flow: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center
     }
     #activites{
-        display: flex;
         flex-direction: column;
         align-items: center;
+       
     }
-    .legende_1{
-        font-size: 1.8vw;
-    }
-    .legende_2{
-        font-size: 1.5vw;
-    }
-    .legende_3{
-        font-size: 1.7vw;
+    .mis_en_page{
+        margin: 0;
     }
 
-    .flex_align_2{
-        width: 1vw;
-        height: 0.8vh;
+    .liste_1{
+        flex-wrap: wrap;
+    }
+    .liste_2{
+        flex-wrap: wrap;
+    }
+    .flex_column_2{
+        flex-direction: row;
     }
 
-    .flex_align_3{
-        padding: 3vh 0.8vw 1.2vh 0.8vw;
+    .liste_activites{
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width:992px){
+
+    .flex_column_2{
+        flex-direction: column;
+    }
+    .descriptif{
+        width: 337px; height: 245px;
     }
 
-    .flex_align_4{
-        padding: 3.4vh 0.8vw 1.2vh 0.8vw;
+    .descriptif_2{
+        width: 489px;
+        height: 216px;
+    }
+    .photo_pop{
+        width: 215px;
+    height: 214px;
+    }
+    .photo{
+        width:340px; height: 171px;
+    }
+}
+
+@media screen and (max-width:979px){
+
+    .flex_column_2{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:911px){
+
+    .descriptif{
+        width: 338px; height: 248px;
     }
 
-    .etoile{
-        width: 1vw;
-        height: 0.8vh;
+    .photo{
+        width:340px; height: 171px;
+    }
+}
+
+@media screen and (max-width:884px){
+    .partie_filtres{
+        align-items: flex-start;
     }
 }
 
 @media screen and (max-width:768px) {
 
+        .legende_1{
+            font-size: 21px;
+        }
+
+        .legende_3{
+            font-size: 21px;
+        }
+            
     h2{
         margin-left: 4vw;
         padding-bottom: 0;
+    }
+
+    .titre_recherche{
+        font-size: 29px;
+    }
+    .flex_column_2{
+        gap: 3vh;
     }
 
     main{
@@ -555,6 +718,10 @@ footer{
     header{
         flex-direction: column;
         align-items: center;
+    }
+
+    #activites{
+        gap: 4vh;
     }
 
     .container{
@@ -577,6 +744,7 @@ footer{
         border-top: none 0;
         border-bottom: #0065FC solid 2px;
      }
+
      a{
         border-top: none 0;
         border-bottom: transparent solid 2px;
@@ -607,17 +775,20 @@ footer{
 
     .liste_plus_populaires{
         align-items: center;
-        flex-direction: column;
         padding-bottom: 4vh;
+        gap: 3vh;
         
     }
+
     .descriptif_2{
-        margin-bottom: 2vh;
+        width: 583px;
+        height: 243px;
     }
 
     .plus{
-        justify-content: space-between;
+        gap: 53vw;
     }
+
     #hebergements {
         background-color: transparent;
        align-items: flex-start;
@@ -626,55 +797,64 @@ footer{
     }
 
     .liste_1{
-        flex-direction: column;
-        gap:0;
-        
-        
-    }
-    .h3_activites{
-        font-size: 2.9vw;
-    }
-    
-    .legende_1{
-        font-size: 3.3vw;
-    }
-    .legende_2{
-        font-size: 2.6vw;
-    }
-    .legende_3{
-        font-size: 3.3vw;
+        gap: 3vh;
+           
     }
 
+    .liste_2{
+        gap: 3vh;
+           
+    }
+    
+    .h3_activites{
+        font-size: 29px;
+    }
+   
+
     .flex_align_2{
-        width: 1vw;
-        height: 0.8vh;
+        margin: 1.4vh 0.7vw;
+
     }
 
     .flex_align_3{
-        padding: 3vh 0.8vw 1.2vh 0.8vw;
+        margin: 1.4vh 0.7vw;
+
     }
 
     .flex_align_4{
-        padding: 3.4vh 0.8vw 1.2vh 0.8vw;
-    }
+        margin: 1.4vh 0.7vw;
 
-    .etoile{
-        width: 1.7vw;
-    height: 1vh;
-    
     }
 
     .flex_align{
         padding: 1.2vh 0.8vw 1.2vh 0.8vw;
     }
 
-    
-
     .descriptif{
-        margin-bottom: 4vh;
-        margin-left: 4vw;
-        width: 83vw;
-        height: 41vh;
+        width: 583px;
+    height: 343px;
+    margin-bottom: 0;
+    }
+
+    .etoile{
+        width: 12px;
+    
+    }
+    .les_plus_populaires{
+        gap: 3vh;
+        align-items: flex-start;
+    }
+    .descriptif_haute{
+        gap: 1vh;
+        width: 583px;
+        height: 343px;
+
+    }
+
+    .descriptif_petite{
+        gap: 1vh;
+        width: 583px;
+        height: 343px;
     }
     .afficher_plus{
         justify-content: flex-start;
@@ -682,59 +862,50 @@ footer{
 
     #activites{
         align-items: flex-start;
+       
     }
 
+    .h3_activites{
+        font-size: 21px;
+        margin: 3.7vh 0.2vw 0.6vh 3.3vw;
+    }
     .liste_activites{
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .descriptif_2{
-        height: 26.2vh;
-    width: 83vw;
-    margin-bottom: 4vh;
-    }
-
-    .photo_pop{
-        width: 35vw;
-    height: 26vh;
+        gap: 3vh;
+        align-items: flex-start;
     }
 
     .photo{
-
-        width: 83.3vw;
-        height: 29vh;
+        width: 585px;
+        height: 235px;
+        background-size: contain;
     }
-    .photo_fin{
 
-        width: 83.3vw;
-        height: 29vh;
+    .photo_fin{
+        width: 585px;
+        height: 235px;
+        background-size: contain;
     }
 
     .photo_haute{
-        width: 83.3vw;
-        height: 29vh;
-
+        width: 585px;
+        height: 235px;
+        background-size: contain;
     }
 
-    .descriptif_haute{
-        width: 83.3vw;
-    height: 39vh;
-    margin: 3vh 7vw;
+    .photo_pop{
+        width: 247px;
+        height: 242px;
+        background-size: contain;
+    }
+    
+    .flex_column_0{
+        align-items: flex-start;
+        gap: 3vh;
     }
 
-    .descriptif_petite{
-        margin: 3vh 7vw;
-        height: 39vh;
-        width: 83.3vw;
+    .afficher_plus{
+        font-size: 19px;
     }
-
-    .flex_column_1{
-        margin: 2vh 0;
-    }
-
-
-
 
     footer{
         flex-direction: column;
@@ -746,7 +917,178 @@ footer{
         margin-bottom: 3vh;
 
     }
-    
 }
+@media screen and (max-width:623px){
+
+    .descriptif{
+        width: 463px;
+
+    }
+    .descriptif_2{
+        width: 463px;
+    }
+
+    .photo{
+        width: 464px;
+    }
+    .photo_haute{
+        width: 464px;
+    }
+    .photo_pop{
+        width: 219px;
+        
+    }
+    .h3_activites{
+        margin: 0;
+    }
+
+    .photo_fin{
+        width: 464px;
+    }
+
+    .descriptif_haute{
+        width: 463px;
+        height: 306px;
+    }
+    .descriptif_petite{
+        width: 463px;
+        height: 306px;
+    }
+    .plus{
+        gap: 44vw;
+
+    }
+}
+
+
+@media screen and (max-width:506px){
+    .descriptif{
+        width: 365px;
+
+    }
+    .descriptif_2{
+        width: 365px;
+    }
+
+    .photo{
+        width: 365px;
+    }
+    .photo_haute{
+        width: 365px;
+    }
+
+    .photo_fin{
+        width: 365px;
+    }
+
+    .descriptif_haute{
+        width: 365px;
+    }
+    .descriptif_petite{
+        width: 365px;
+    }
+    .photo_pop{
+        width: 165px;
+        
+    }
+
+}
+
+@media screen and (max-width:413px){
+
+    .descriptif{
+        width: 265px;
+        height: 287px;
+
+    }
+
+    .descriptif_2{
+        width: 265px;
+        height: 200px;
+    }
+    .legende_2{
+        margin-top: 0;
+    }
+
+    .h3_activites{
+        margin:0
+    }
+    .flex_align{
+        padding: 0;
+    }
+
+    .photo{
+        width: 265px;
+        height: 196px;
+        border-radius: 4px;
+    }
+    .photo_haute{
+        width: 265px;
+        height: 224px;
+    }
+    .photo_pop{
+        width: 165px;
+        height: 198px;
+        border-radius: 4px;
+        
+    }
+
+    .photo_fin{
+        width: 265px;
+        height: 224px;
+    }
+
+    .descriptif_haute{
+        width: 265px;
+        height: 289px;
+    }
+    .descriptif_petite{
+        width: 265px;
+        height: 289px;
+    }
+    .liste_1{
+        gap: 1vh;      
+    }
+
+    .liste_2{
+        gap: 1vh;      
+    }
+    .liste_activites{
+        gap: 3vh;
+    }
+
+    .flex_column_2{
+        gap: 3vh;
+    }
+
+    .flex_column_0{
+        gap: 1vh
+    }
+
+}
+
+
+
+
+@media screen and (max-width:412px){
+
+    .map-marker{
+        padding: 2vw;
+    }
+
+    .barre{
+        padding: 2vw;
+        width: 28vw;
+    }
+
+    button{
+        padding: 2vw;
+    }
+    .container_liens_header{
+        margin: 0vh 2vw;
+    }
+
+}
+
 
 
