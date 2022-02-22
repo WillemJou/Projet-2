@@ -3,16 +3,10 @@
 body{
     font-family: "Raleway", sans-serif;
  margin: 0;
-  overflow-x: none;
+ overflow: scroll;
  
-   
 }
 
-
-
-ul{
-    padding-inline-start:  0;
-}
 
 .flex_filtres{
     display: flex;
@@ -23,8 +17,6 @@ ul{
 .flex_column_0{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     margin-left: 2vw;
 }
    
@@ -32,6 +24,14 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 1.5vh 3vw 1vh 1vw;
+}
+.flex_column_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0.5vh 3vw 1vh 1vw;
+
 }
 
 .flex_column_1{
@@ -47,33 +47,39 @@ ul{
 }
 
 h2{
+    font-weight: 800;
     padding-bottom: 2vh;
 }
 
 
 .titre_pop{
+    font-weight: 800;
     margin-left: 0.2vw;
 }
 h3{
+    font-weight: 700;
     font-size: 19px;
 }
 .h3_activites{
+    font-weight: 800;
     margin: 1.2vh 0 0.6vh 0.7vw;
     font-size: 19px;
 }
 
+ul{
+    padding: 0;
+}
 li{
     list-style: none;
     cursor: pointer;
- 
 }
 
 a{
     text-decoration: none;
     border-top: solid  2px transparent;
     color: black; 
-    
 }
+
  p{
      margin: 5px;
      font-size: 17px
@@ -81,13 +87,13 @@ a{
 
 
 .afficher_plus{
-
     font-weight: bold;
     cursor: pointer;
 }
 
 
 .titre_recherche {
+    font-weight: 700;
     font-size: 29px;
     margin-bottom: 5px;
 }
@@ -95,23 +101,18 @@ a{
 header{
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .container{
-    display: flex;
-    
+    display: flex;   
 }
 
 .container_liens_header{
-    width: 12vw;
-    
+    width: 12vw;   
     display: flex;
     align-items: center;
     border-top: transparent solid 2px;
-    justify-content: center;
-     
+    justify-content: center;    
 }
 
 .container_liens_header:hover{
@@ -121,7 +122,6 @@ header{
 
 a:hover{
    color: #0065FC;
-   
 }
 
 .liens a:hover{
@@ -140,14 +140,14 @@ a:hover{
     flex-direction: row;
     align-items: center;
     padding-top: 1.5vw;
-   
-
 }
 
 .barre{
-    color: black;
-    border-style: none;
-    font-weight: bold;
+    border-top: solid 1px #f2f2f2;
+    border-bottom: solid 1px #f2f2f2;
+    border-left: none;
+    border-right: none;
+    font-weight: 700;
     font-size: 15px;
     padding: 14px;
 }
@@ -161,8 +161,7 @@ button{
     border-bottom-right-radius: 12px;
     border-style: none;
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    
+    font-weight: 700; 
 }
 
 .map-marker{
@@ -173,22 +172,17 @@ button{
     padding: 15px;
     background-color: #f2f2f2;
     object-fit:contain;
-   
-  
 }
 
 .partie_filtres {
     display: flex;
     border-color:#f2f2f2;
     border-radius: 39px;
-   gap: 3vw;
-    
+   gap: 3vw;   
 }
 
 .flex_filtres{
    display: flex;
-   
-
 }
 
 .lien_filtre{
@@ -199,20 +193,17 @@ button{
     padding: 1px 14px 1px 0;
     border-color: #f2f2f2;
     border-radius: 45px;
-    font-weight: bold;
-  
-    
+    font-weight: bold;  
 }
+
 .lien_filtre :hover {
     transform: rotate(360deg);
     transition-duration: 2s;
-
 }
 
 .filtres :hover{
     border-color: #0065FC;
-    border-width: 1px;
-    
+    border-width: 1px;    
 }
 
 .espace_filtre{
@@ -225,37 +216,31 @@ button{
     background-color:#deebff;
     width: 22px; height: 22px;
     object-fit: contain;
-    
-
 }
 
 .logo_filtre :hover{
-    border-color: #0065FC;
-    
+    border-color: #0065FC;  
 }
 
 
 .logO{
-    width: 19px; height: 19px;
+    width: 19px; 
     cursor: pointer;
-   object-fit: contain;
-   
+  object-fit: contain;
 }
 
 
 
 .logo_info{
-   
     border-style: solid;
     border-color:#f2f2f2 ;
-    border-radius: 50px;
-  width: 11px; height: 11px;
+    border-radius: 68px;
+  width: 4px;
   object-fit: contain;
 }
 
 .etoile{
     width: 12px;
-    
     display: flex;
     object-fit: contain;
 }
@@ -264,39 +249,33 @@ button{
     display: flex;
     align-items: center;
     margin: 1vh 2vw;
-   
 }
 .plus{
-
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-
 }
 
 main{
     display: flex;
-    flex-flow: column wrap;
-    
+    flex-flow: column wrap; 
 }
+
 #hebergements{
     display: flex;
    flex-direction: column;
     background-color: #f2f2f2;
     border-radius: 21px;
     padding: 3vh 2vw 3vh 0;
-   
 }
 
 .les_plus_populaires{
     display: flex;
     flex-direction: column;
     padding: 3.5vh 2.5vw 0 2.5vw;
-  
     background-color: #f2f2f2;
     border-radius: 21px;
     border-radius: 21px;
-  
 }
 
 .mis_en_page{
@@ -304,19 +283,16 @@ main{
     flex-wrap: nowrap;
     margin-bottom: 4vh;
     justify-content: space-between;
-   
-   
 }
+
 .liste_1{
     display: flex;
-    gap: 2vw;
-    
+    gap: 2vw; 
 }
 
 .liste_2{
     display: flex;
-    gap: 2vw;
-   
+    gap: 2vw; 
 }
 
 #activites{
@@ -330,105 +306,92 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
-    border-radius: 9px;  
+    border-radius: 20.2px;  
     margin-bottom: 4vh;
     cursor: pointer;
-    padding: 0.2vh 0.4vw 1vh 0.1vw;
-    box-shadow: 3px 4px 2px #1d1d1d1c;
+    padding: 0.3vw 0.3vw 0.2vw 0.3vw;
+    box-shadow:1px 1px 12px #1d1d1d1c;
     width: 275px;
-    height: 206px;
+    height: 221px;
 }
 
 .descriptif_2{
     display: flex;
     background-color: white;
-    border-radius: 9px;  
+    border-radius: 20.2px;  
     cursor: pointer;
-    box-shadow: 3px 4px 2px #1d1d1d1c;
-    padding: 0.2vh 1vw 0 0.2vw;
+    box-shadow:1px 1px 12px #1d1d1d1c;
+    padding: 0.3vw 0.3vw 0.2vw 0.3vw;
     height: 139px;
-    width: 421px;
-
+    width: 387px;
 }
 
 .descriptif_haute{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 9px;  
+    border-radius: 20.2px;  
     width: 322px;
     height: 404px;
     cursor: pointer;
-    box-shadow: 3px 4px 4px #1d1d1d5b;
-
+    box-shadow:1px 1px 12px #1d1d1d1c;
 }
 
 .descriptif_petite{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 9px;   
+    border-radius: 20.2px;   
     height: 187px;
     width: 274px;
     cursor: pointer;
-    box-shadow: 3px 4px 2px #1d1d1d5b;
-    
+    box-shadow:1px 1px 12px #1d1d1d1c; 
 }
 
 .legende_1{
     margin-top: 0.3vh;
     margin-bottom: 0;
-  font-size: 17px;
-  margin-left: 0.7vw;
+  font-size: 18px;
+  font-weight: 800;
    
 }
+
 .legende_2{
     display: flex;
-
     margin-top: 0.7vh;
     margin-bottom: 0;
     font-size: 17px;
-    margin-left: 0.7vw;
+   
 }
 
 .legende_3{
-    margin-top: 1.3vh;
+    margin: 0;
     margin-bottom: 0;
-  font-size: 17px;
-  margin-left: 0.7vw;
-   
+  font-size: 18px;
+  font-weight: 800;
+  
 }
 
 .flex_align {
     display: flex;
-    margin-left: 0.7vw;
-    margin-top: 0.7vh;
     
-
+    margin-top: 1.7vh;
 }
 
 .flex_align_2 {
     display: flex;
-    margin: 0.4vh 0.7vw;
    
-
 }
 
 .flex_align_3 {
     display: flex;
-    margin: 0.4vh 0.7vw;
-   
-
+    
 }
 
 .flex_align_4 {
     display: flex;
-    margin:  0.4vh 0.7vw;
    
-
 }
-
-
 
 .liste_plus_populaires{
     display: flex;
@@ -437,50 +400,43 @@ main{
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
     background-color: #f2f2f2;
-
 }
 
 .liste_activites{
     display: flex;
     justify-content: space-between;
-    border-radius: 26px;
-    
+    border-radius: 26px;   
 }
 
-
-
-
 .photo{
-    width: 282px;
+    width: 275px;
     height: 130px;
-    border-top-left-radius:9px;
-    border-top-right-radius: 9px;
-    object-fit: cover;
-    
+    border-top-left-radius:17px;
+    border-top-right-radius: 17px;
+    object-fit: cover;   
 }
 
 .photo_fin{
     width: 274px;
     height: 136px;
-    border-top-left-radius:9px;
-    border-top-right-radius: 9px;
-    object-fit: cover;
-    
+    border-top-left-radius:17px;
+    border-top-right-radius: 17px;
+    object-fit: cover;  
 }
 
 .photo_pop{
     width: 146px;
     height: 137px;
-    border-bottom-left-radius:9px;
-    border-top-left-radius:9px;
+    border-bottom-left-radius:17px;
+    border-top-left-radius:17px;
     object-fit: cover;
 }
 
 .photo_haute{
     width: 322px;
     height: 348px;
-    border-top-left-radius:9px;
-    border-top-right-radius: 9px;
+    border-top-left-radius:17px;
+    border-top-right-radius: 17px;
     object-fit: cover;
 }
 
@@ -492,15 +448,12 @@ footer{
     padding: 1vh 13.5vw 3.8vh 5.5vw;
     margin-left: 0;
     margin-bottom: 0;
-
-
 }
 
 
 .article_footer{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
 @media screen and (max-width:1485px){
@@ -514,6 +467,7 @@ footer{
     .les_plus_populaires{
         padding-bottom: 3%;
     }
+
     .liste_plus_populaires{
         flex-direction: row;
         justify-content: center;
@@ -524,31 +478,30 @@ footer{
     }
 
     .partie_recherche{
-        margin: 1vh 4vw;
+        margin: 1vh 4vw;  
+        gap: 1vw;
     }
 
     main{
         gap: 2vh;
     }
+
     .plus{
         justify-content: flex-start;
-        gap: 1vw;
+        gap: 5vw;
     }
 
     .liste_1{
         width: 100%;
        justify-content: space-evenly;
     }
+
     .liste_2{
         width: 100%;
         justify-content: space-evenly;
-    }
-    
-
-
-    
-
+    } 
 }
+
 @media screen and (max-width:1261px){
 
     .liste_activites{
@@ -560,14 +513,13 @@ footer{
         flex-direction: row;
         gap: 3vh;
     }
-
 }
-
 
 @media screen and (max-width:992px) {
 
     header{
         justify-content: space-around;
+
     }
 
     .container_liens_header{
@@ -581,10 +533,15 @@ footer{
     .flex_column_0{
         align-items: center;
     }
+
+    .flex_column{
+        margin: 1.5vh 3vw 3vh 2vw;
+    }
     .flex_filtres{
         flex-wrap: wrap;
     
     }
+
     .partie_filtres{
         gap: 0;
         flex-direction: column;
@@ -598,28 +555,30 @@ footer{
     .titre_filtre{
         text-align: middle;
     }
+
     .mis_en_page{
         flex-direction: column;
     }
     
     .afficher_plus{
         display: flex;
-    
     }
 
     .plus{
      justify-content: center;
     }
+
     .liste_plus_populaires{
         flex-flow: row;
         flex-wrap: wrap;
         justify-content: center
     }
+
     #activites{
         flex-direction: column;
         align-items: center;
-       
     }
+
     .mis_en_page{
         margin: 0;
     }
@@ -630,35 +589,31 @@ footer{
     .liste_2{
         flex-wrap: wrap;
     }
-    .flex_column_2{
-        flex-direction: row;
-    }
 
     .liste_activites{
         align-items: center;
-    }
-    
-}
-
-@media screen and (max-width:992px){
+        gap: 5vw;
+    } 
 
     .flex_column_2{
         flex-direction: column;
     }
     .descriptif{
-        width: 337px; height: 245px;
+        width: 337px; height: 254px;
+        padding: 0.7vw 0.8vw 1vw 0.6vw;
     }
 
     .descriptif_2{
         width: 489px;
         height: 216px;
+        padding: 0.7vw 0.8vw 0.5vw 0.7vw;
     }
     .photo_pop{
         width: 215px;
     height: 214px;
     }
     .photo{
-        width:340px; height: 171px;
+        width:340px; height: 166px;
     }
 }
 
@@ -669,50 +624,31 @@ footer{
     }
 }
 
-@media screen and (max-width:911px){
+@media screen and (max-width:768px) {
 
-    .descriptif{
-        width: 338px; height: 248px;
-    }
-
-    .photo{
-        width:340px; height: 171px;
-    }
-}
-
-@media screen and (max-width:884px){
     .partie_filtres{
         align-items: flex-start;
     }
-}
-
-@media screen and (max-width:768px) {
-
         .legende_1{
-            font-size: 21px;
+            font-size: 4.7vw;
         }
 
         .legende_3{
-            font-size: 21px;
+            font-size: 4.7vw;
         }
             
     h2{
         margin-left: 4vw;
         padding-bottom: 0;
+        font-size: 5.7vw;
     }
 
-    .titre_recherche{
-        font-size: 29px;
-    }
-    .flex_column_2{
-        gap: 3vh;
-    }
-
+    
     main{
+        display: block;
         width: 100vw;
         margin: 3vh 0;
-        align-content: stretch;
-
+        align-content: stretch
     }
     
     header{
@@ -736,7 +672,7 @@ footer{
        border-top: none 0;
         border-bottom: transparent solid 2px;
         justify-content: center;
-        padding-bottom: 1vh; 
+        padding-bottom: 2vh; 
     }
 
     .container_liens_header:hover{
@@ -747,15 +683,21 @@ footer{
 
      a{
         border-top: none 0;
+        font-size: 2.7vw;
         border-bottom: transparent solid 2px;
      }
+     p, .p_info{
+         font-size: 2.7vw;
+     }
+
      .BOOKI{
-         margin: 3vw;
+         margin: 4vw;
          padding-left: 10vw;
      }
 
     .titre_filtre{
         margin: 3vh 3vw;
+        font-size: 4vw;
     }
     
     .flex_filtres{
@@ -771,22 +713,68 @@ footer{
         margin-top: 0;
         margin-left: 0;
         border-radius: 0;
+        display: block;
     }
 
     .liste_plus_populaires{
         align-items: center;
         padding-bottom: 4vh;
-        gap: 3vh;
-        
+        gap: 3vh;  
+    }
+
+    .titre_pop{
+       padding-bottom: 27px;
+    }
+    
+    button{
+        position: relative;
+        right: 6vw;
+        background-color: #0065FC;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(img/magnifying-glass.png);
+        padding: 4.2vw;
+        border: #f2f2f2 1px solid;
+        border-radius: 18px;
+        font-size: 0;
+    }
+    .map-marker{
+        height: 5vw;
+        padding: 1.9VW 3.9vw;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+
+    .logO{
+        width: 31px;  
+    }
+    
+    .barre{
+        width: 58vw;
+        height: 4.7vw;
+        padding: 1.9vw;
+        font-size: 4vw;
     }
 
     .descriptif_2{
-        width: 583px;
-        height: 243px;
+        width: 86vw;
+    height: 37.2vw;
+    padding: 1.2vw 1.8vw 1.1vw 1.3vw;
+    border-radius: 47.2px;
+
+    }
+
+    .photo_pop{   
+        background-size: contain;
+        border-bottom-left-radius: 41px;
+        border-top-left-radius: 41px;
+        height: 37vw;
+        width: 36vw;
+      
     }
 
     .plus{
-        gap: 53vw;
+        justify-content: space-between;
     }
 
     #hebergements {
@@ -797,120 +785,156 @@ footer{
     }
 
     .liste_1{
-        gap: 3vh;
-           
+        gap: 6vh; 
+        justify-content: flex-start; 
+        flex-direction: column;     
     }
 
     .liste_2{
-        gap: 3vh;
-           
+        gap: 6vh; 
+        justify-content: flex-start;  
+        flex-direction: column;   
     }
     
     .h3_activites{
-        font-size: 29px;
+        font-size: 4.7vw;
+        font-weight:700;
     }
-   
+
+    .legende_2{
+        font-size: 2.7vw;
+    }
+    h3{
+        font-size: 4.7vw;
+    }
+
+    li{
+    font-size: 2.8vw;
+    }
 
     .flex_align_2{
-        margin: 1.4vh 0.7vw;
-
+        margin: 0;
     }
 
     .flex_align_3{
-        margin: 1.4vh 0.7vw;
-
+        margin: 0;
     }
 
     .flex_align_4{
-        margin: 1.4vh 0.7vw;
-
+        margin: 0;
     }
 
-    .flex_align{
-        padding: 1.2vh 0.8vw 1.2vh 0.8vw;
+    .titre_hebergements{
+        margin-left: 0;
+        font-size: 6.3vw;
     }
 
+    .flex_column{
+        margin: 3.5vh 3vw 3vh 2vw;
+    }
+    .flex_column_1{
+        gap: 6vh;
+        width: 100%;
+    }
+    .flex_column_2{
+        width: 100%;
+        gap: 6vh;
+    }
     .descriptif{
-        width: 583px;
-    height: 343px;
-    margin-bottom: 0;
-    }
-
-    .etoile{
-        width: 12px;
-    
-    }
-    .les_plus_populaires{
-        gap: 3vh;
-        align-items: flex-start;
-    }
-    .descriptif_haute{
-        gap: 1vh;
-        width: 583px;
-        height: 343px;
-
-    }
-
-    .descriptif_petite{
-        gap: 1vh;
-        width: 583px;
-        height: 343px;
-    }
-    .afficher_plus{
+        width: 95vw;
+        height: 61.2vw;
+        padding: 1.2vw 1.8vw 1.1vw 1.3vw;
+        margin-bottom: 0;
+        gap: 0.3vh;
+        border-radius: 47.2px;
         justify-content: flex-start;
     }
-
-    #activites{
-        align-items: flex-start;
-       
-    }
-
-    .h3_activites{
-        font-size: 21px;
-        margin: 3.7vh 0.2vw 0.6vh 3.3vw;
-    }
-    .liste_activites{
-        gap: 3vh;
-        align-items: flex-start;
+    .lien_filtre{
+        border-width: 2px;
     }
 
     .photo{
-        width: 585px;
-        height: 235px;
+        width: 95.1vw;
+        height: 40vw;
+        border-top-left-radius: 47.2px;
+        border-top-right-radius: 47.2px;
         background-size: contain;
     }
 
+    .descriptif_haute{
+        border-radius: 47.2px;
+        width: 95vw;
+        height: 58vw;
+    }
+
+    .descriptif_petite{
+        border-radius: 47.2px;
+        width: 95vw;
+        height: 58vw;
+    }
+    
     .photo_fin{
-        width: 585px;
-        height: 235px;
+        width:  95.1vw;
+        height: 40vw;
         background-size: contain;
+        border-top-left-radius: 47.2px;
+        border-top-right-radius: 47.2px;
     }
 
     .photo_haute{
-        width: 585px;
-        height: 235px;
+        width: 95.1vw;
+        height: 40vw;
         background-size: contain;
-    }
-
-    .photo_pop{
-        width: 247px;
-        height: 242px;
-        background-size: contain;
-    }
-    
-    .flex_column_0{
-        align-items: flex-start;
-        gap: 3vh;
+        border-top-left-radius: 47.2px;
+        border-top-right-radius: 47.2px;
     }
 
     .afficher_plus{
-        font-size: 19px;
+        justify-content: flex-start;
+        font-size: 4.7vw;
+    }
+
+    .etoile{
+        width: 3.2vw;
+        height: 7.2vw;
+    }
+
+    .les_plus_populaires{
+        gap: 6vh;
+        align-items: flex-start;
+    }
+    .titre_recherche{
+        font-size: 5.7vw;
+        margin-left: 0;
+    }
+
+    #activites{
+        align-items: flex-start; 
+    }
+
+    .h3_activites{
+        font-size: 4.7vw;
+        margin: 3.7vh 0.2vw 0.6vh 3.3vw;
+    }
+
+    .liste_activites{
+        gap: 6vh;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+
+    
+    .flex_column_0{
+        align-items: flex-start;
+        gap: 6vh;
     }
 
     footer{
         flex-direction: column;
         gap: 0;
-
+        margin-top: 12vh;
+        padding: 1vh 0.5vw 3.8vh 5.5vw;;
     }
     
     .article_footer{
@@ -918,159 +942,36 @@ footer{
 
     }
 }
-@media screen and (max-width:623px){
-
-    .descriptif{
-        width: 463px;
-
-    }
-    .descriptif_2{
-        width: 463px;
-    }
-
-    .photo{
-        width: 464px;
-    }
-    .photo_haute{
-        width: 464px;
-    }
-    .photo_pop{
-        width: 219px;
-        
-    }
-    .h3_activites{
-        margin: 0;
-    }
-
-    .photo_fin{
-        width: 464px;
-    }
-
-    .descriptif_haute{
-        width: 463px;
-        height: 306px;
-    }
-    .descriptif_petite{
-        width: 463px;
-        height: 306px;
-    }
-    .plus{
-        gap: 44vw;
-
-    }
-}
-
-
-@media screen and (max-width:506px){
-    .descriptif{
-        width: 365px;
-
-    }
-    .descriptif_2{
-        width: 365px;
-    }
-
-    .photo{
-        width: 365px;
-    }
-    .photo_haute{
-        width: 365px;
-    }
-
-    .photo_fin{
-        width: 365px;
-    }
-
-    .descriptif_haute{
-        width: 365px;
-    }
-    .descriptif_petite{
-        width: 365px;
-    }
-    .photo_pop{
-        width: 165px;
-        
-    }
-
-}
 
 @media screen and (max-width:413px){
 
+    .photo{
+        height: 20vh;
+    }
     .descriptif{
-        width: 265px;
-        height: 287px;
+        height: 32vh;
 
     }
-
-    .descriptif_2{
-        width: 265px;
-        height: 200px;
-    }
-    .legende_2{
-        margin-top: 0;
+    .descriptif_haute{
+        height: 32vh;
     }
 
-    .h3_activites{
-        margin:0
+    .descriptif_petite{
+        height: 32vh;
+    }
+    
+    .photo_fin{
+        height: 20vh;
+        background-size: contain;
+    }
+
+    .photo_haute{
+        height: 20vh;
+        background-size: contain;
     }
     .flex_align{
         padding: 0;
     }
-
-    .photo{
-        width: 265px;
-        height: 196px;
-        border-radius: 4px;
-    }
-    .photo_haute{
-        width: 265px;
-        height: 224px;
-    }
-    .photo_pop{
-        width: 165px;
-        height: 198px;
-        border-radius: 4px;
-        
-    }
-
-    .photo_fin{
-        width: 265px;
-        height: 224px;
-    }
-
-    .descriptif_haute{
-        width: 265px;
-        height: 289px;
-    }
-    .descriptif_petite{
-        width: 265px;
-        height: 289px;
-    }
-    .liste_1{
-        gap: 1vh;      
-    }
-
-    .liste_2{
-        gap: 1vh;      
-    }
-    .liste_activites{
-        gap: 3vh;
-    }
-
-    .flex_column_2{
-        gap: 3vh;
-    }
-
-    .flex_column_0{
-        gap: 1vh
-    }
-
-}
-
-
-
-
-@media screen and (max-width:412px){
 
     .map-marker{
         padding: 2vw;
@@ -1081,14 +982,77 @@ footer{
         width: 28vw;
     }
 
-    button{
-        padding: 2vw;
-    }
     .container_liens_header{
         margin: 0vh 2vw;
     }
-
 }
 
+@media screen and (max-width:342px){
 
+    .descriptif_2{
+        height: 15.2vh;
+    }
+    .photo_pop{
+        height: 15vh;
+}
 
+    .legende_2{
+    font-size: 1.746vh;
+}
+li, a{
+    font-size: 5vw;
+}
+p, h3{
+    font-size: 4.6vw;
+}
+
+.titre_pop, .titre_hebergements, h2{
+    font-size: 9vw;
+}
+
+.titre_filtre{
+    font-size: 7vw;
+}
+
+.legende_3, .legende_1, .h3_activites, .afficher_plus{
+    font-size: 5.9vw;
+}
+ .legende_2{
+     font-size: 5.2vw;
+ }
+ .etoile, .logO, .map-marker{
+     width: 5vw;
+ }
+
+ .logo_filtre{
+    width: 4vw;
+    height: 2.5vh;
+    padding: 2vw;
+ }
+ 
+ button, .barre{
+     font-size: 4.4vw;
+ }
+
+ .titre_recherche{
+     font-size: 9.8vw;
+ }
+ .BOOKI{
+     width: 50vw;
+ }
+ .recherche{
+     overflow: auto;
+ }
+}
+
+@media screen and (max-width:136px) {
+    .lien_filtre{
+        border: 0;
+    }
+    .logo_info{
+        border: 0;
+        width: 2vw;
+        height: 1.3vh;
+    }
+    
+}
