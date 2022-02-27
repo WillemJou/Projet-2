@@ -30,20 +30,20 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0.5vh 3vw 1vh 1vw;
+    margin: 0 0 5px 8px;
 
 }
 
 .flex_column_1{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+   justify-content: space-between;
 }
 
 .flex_column_2{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    justify-content: space-between;
 }
 
 h2{
@@ -62,7 +62,7 @@ h3{
 }
 .h3_activites{
     font-weight: 800;
-    margin: 1.2vh 0 0.6vh 0.7vw;
+    margin: 1.7vh 0 0.6vh 0.7vw;
     font-size: 19px;
 }
 
@@ -132,7 +132,7 @@ a:hover{
 .partie_recherche{
     display: flex;
     flex-direction: column;
-    margin: 1vh 2vw;
+    margin: 2vh 2.5%;
 
 }
 .recherche{
@@ -229,13 +229,12 @@ button{
   object-fit: contain;
 }
 
-
-
 .logo_info{
     border-style: solid;
     border-color:#f2f2f2 ;
     border-radius: 68px;
-  width: 4px;
+  width: 9px; height: 11px;
+  padding: 4px;
   object-fit: contain;
 }
 
@@ -248,7 +247,7 @@ button{
 .info{
     display: flex;
     align-items: center;
-    margin: 1vh 2vw;
+    margin: 2vh 2.5%;
 }
 .plus{
     display: flex;
@@ -259,10 +258,12 @@ button{
 main{
     display: flex;
     flex-flow: column wrap; 
+    margin: 0 2.5%;
 }
 
 #hebergements{
     display: flex;
+    width: 61%;
    flex-direction: column;
     background-color: #f2f2f2;
     border-radius: 21px;
@@ -271,8 +272,9 @@ main{
 
 .les_plus_populaires{
     display: flex;
+    width: 28%;
     flex-direction: column;
-    padding: 3.5vh 2.5vw 0 2.5vw;
+    padding: 3.5vh 2.5vw 5vh 2.5vw;
     background-color: #f2f2f2;
     border-radius: 21px;
     border-radius: 21px;
@@ -298,32 +300,47 @@ main{
 #activites{
     display: flex;
     flex-direction: column;
-    margin: 2vw;
+    margin: 2vh 0;
 }
-
 .descriptif{
-    display: flex;
+
+display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
-    border-radius: 20.2px;  
+    border-radius: 20.2px;
     margin-bottom: 4vh;
     cursor: pointer;
-    padding: 0.3vw 0.3vw 0.2vw 0.3vw;
-    box-shadow:1px 1px 12px #1d1d1d1c;
-    width: 275px;
-    height: 221px;
+    padding: 5px;
+    box-shadow: 1px 1px 12px #1d1d1d1c;
+    width: 100%;
+    height: 241px;
 }
+.descriptif_absolu{
+
+    display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 20.2px;
+        margin-bottom: 4vh;
+        cursor: pointer;
+        padding: 5px;
+        box-shadow: 1px 1px 12px #1d1d1d1c;
+        width: 100%;
+        height: 241px;
+    }
 
 .descriptif_2{
     display: flex;
+    width: 100%;
     background-color: white;
     border-radius: 20.2px;  
     cursor: pointer;
     box-shadow:1px 1px 12px #1d1d1d1c;
     padding: 0.3vw 0.3vw 0.2vw 0.3vw;
-    height: 139px;
-    width: 387px;
+    height: 150px;
+    
 }
 
 .descriptif_haute{
@@ -331,8 +348,8 @@ main{
     flex-direction: column;
     background-color: white;
     border-radius: 20.2px;  
-    width: 322px;
-    height: 404px;
+    width: 396px;
+    height: 531px;
     cursor: pointer;
     box-shadow:1px 1px 12px #1d1d1d1c;
 }
@@ -342,8 +359,8 @@ main{
     flex-direction: column;
     background-color: white;
     border-radius: 20.2px;   
-    height: 187px;
-    width: 274px;
+    height: 226px;
+    width: 341px;
     cursor: pointer;
     box-shadow:1px 1px 12px #1d1d1d1c; 
 }
@@ -374,23 +391,11 @@ main{
 
 .flex_align {
     display: flex;
-    
-    margin-top: 1.7vh;
+    margin: 6.7px 0 0 4px;
 }
 
-.flex_align_2 {
+.duo{
     display: flex;
-   
-}
-
-.flex_align_3 {
-    display: flex;
-    
-}
-
-.flex_align_4 {
-    display: flex;
-   
 }
 
 .liste_plus_populaires{
@@ -404,21 +409,22 @@ main{
 
 .liste_activites{
     display: flex;
+    height: 100%;
     justify-content: space-between;
     border-radius: 26px;   
 }
 
 .photo{
-    width: 275px;
-    height: 130px;
+    width: 100%;
+    height: 166px;
     border-top-left-radius:17px;
     border-top-right-radius: 17px;
     object-fit: cover;   
 }
 
 .photo_fin{
-    width: 274px;
-    height: 136px;
+    width: 100%;
+    height: 169px;
     border-top-left-radius:17px;
     border-top-right-radius: 17px;
     object-fit: cover;  
@@ -426,15 +432,15 @@ main{
 
 .photo_pop{
     width: 146px;
-    height: 137px;
+    height: 149px;
     border-bottom-left-radius:17px;
     border-top-left-radius:17px;
     object-fit: cover;
 }
 
 .photo_haute{
-    width: 322px;
-    height: 348px;
+    width: 396px;
+    height: 466px;
     border-top-left-radius:17px;
     border-top-right-radius: 17px;
     object-fit: cover;
@@ -455,63 +461,57 @@ footer{
     display: flex;
     flex-direction: column;    
 }
-
-@media screen and (max-width:1485px){
-
-    .mis_en_page{
-        flex-direction: column;
-        gap: 2vh;
-        margin: 1vh 4vw;
-    }
-
-    .les_plus_populaires{
-        padding-bottom: 3%;
-    }
-
-    .liste_plus_populaires{
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .info{
-        margin: 1vh 4vw;
-    }
-
-    .partie_recherche{
-        margin: 1vh 4vw;  
-        gap: 1vw;
-    }
-
-    main{
-        gap: 2vh;
-    }
-
-    .plus{
-        justify-content: flex-start;
-        gap: 5vw;
-    }
-
-    .liste_1{
-        width: 100%;
-       justify-content: space-evenly;
-    }
-
-    .liste_2{
-        width: 100%;
-        justify-content: space-evenly;
-    } 
-}
-
-@media screen and (max-width:1261px){
-
+@media screen and (max-width:1638px){
     .liste_activites{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2vw;
+        gap: 3vw;
     }
+
     .flex_column_2{
         flex-direction: row;
+        gap: 3vw;
+    }
+   
+}
+
+@media screen and (max-width:1296px){
+
+    .mis_en_page{
+        flex-direction: column;
         gap: 3vh;
+    }
+
+    #hebergements{
+        width: 98%;
+    }
+    .les_plus_populaires{
+        width: 95%;
+    }
+
+    .liste_plus_populaires{
+        flex-flow: row nowrap;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width:1272px) {
+    .flex_column_2{
+        flex-direction: column;
+    }
+    .flex_column_1{
+       flex-direction: column;
+    }
+}
+@media screen and (max-width:1191px){
+
+    .liste_plus_populaires{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .descriptif_2{
+        width: 40%;
     }
 }
 
@@ -521,6 +521,17 @@ footer{
         justify-content: space-around;
 
     }
+    main{
+        margin: 0;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-rows: 31vh 30vh 36vh;
+        grid-template-columns: 38vw 38vw;
+        gap: 6vw;
+    
+    }
 
     .container_liens_header{
         width: 20vw;
@@ -529,11 +540,19 @@ footer{
     .partie_recherche{
         align-items: center;
     }
+    .liste_1, .liste_2{
+        flex-direction: column;
+    }
+
 
     .flex_column_0{
         align-items: center;
     }
 
+    .plus{
+        justify-content: center;
+        gap: 2vw;
+    }
     .flex_column{
         margin: 1.5vh 3vw 3vh 2vw;
     }
@@ -564,10 +583,6 @@ footer{
         display: flex;
     }
 
-    .plus{
-     justify-content: center;
-    }
-
     .liste_plus_populaires{
         flex-flow: row;
         flex-wrap: wrap;
@@ -583,37 +598,27 @@ footer{
         margin: 0;
     }
 
-    .liste_1{
-        flex-wrap: wrap;
-    }
-    .liste_2{
-        flex-wrap: wrap;
-    }
-
-    .liste_activites{
-        align-items: center;
-        gap: 5vw;
-    } 
-
     .flex_column_2{
         flex-direction: column;
     }
-    .descriptif{
-        width: 337px; height: 254px;
-        padding: 0.7vw 0.8vw 1vw 0.6vw;
-    }
+
+   .descriptif{
+    width: 100%;
+    height: 100%;
+
+   }
 
     .descriptif_2{
         width: 489px;
         height: 216px;
         padding: 0.7vw 0.8vw 0.5vw 0.7vw;
     }
+   
     .photo_pop{
-        width: 215px;
-    height: 214px;
+        height: 214px;
     }
     .photo{
-        width:340px; height: 166px;
+        height: 166px;
     }
 }
 
@@ -625,6 +630,11 @@ footer{
 }
 
 @media screen and (max-width:768px) {
+
+    .BOOKI{
+        font-size: 3vw;
+    }
+    
 
     .partie_filtres{
         align-items: flex-start;
@@ -658,6 +668,7 @@ footer{
 
     #activites{
         gap: 4vh;
+        margin: 10vh 0;
     }
 
     .container{
@@ -735,18 +746,26 @@ footer{
         background-image: url(img/magnifying-glass.png);
         padding: 4.2vw;
         border: #f2f2f2 1px solid;
-        border-radius: 18px;
-        font-size: 0;
+        border-radius: 12px;
+    }
+    .hidden{
+        display:none;
+    }   
+     .logo_filtre{
+        width: 3vw;
+        height: 0%;
+        padding: 2vw;
+        border-radius: 7vw;
     }
     .map-marker{
         height: 5vw;
-        padding: 1.9VW 3.9vw;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
+    padding: 1.9VW 2.9vw;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
     }
 
     .logO{
-        width: 31px;  
+        width: 5vw;  
     }
     
     .barre{
@@ -757,17 +776,17 @@ footer{
     }
 
     .descriptif_2{
-        width: 86vw;
+        width: 93%;
     height: 37.2vw;
     padding: 1.2vw 1.8vw 1.1vw 1.3vw;
-    border-radius: 47.2px;
+    border-radius: 6vw;
 
     }
 
     .photo_pop{   
         background-size: contain;
-        border-bottom-left-radius: 41px;
-        border-top-left-radius: 41px;
+        border-bottom-left-radius: 5vw;
+        border-top-left-radius: 5vw;
         height: 37vw;
         width: 36vw;
       
@@ -775,22 +794,24 @@ footer{
 
     .plus{
         justify-content: space-between;
+        padding-left: 4vw;
     }
 
     #hebergements {
         background-color: transparent;
-       align-items: flex-start;
-       margin-bottom: 5vh;
-       margin-top: 5vh;
+        justify-content: flex-start;
+       
     }
 
     .liste_1{
+        width: 100%;
         gap: 6vh; 
         justify-content: flex-start; 
         flex-direction: column;     
     }
 
     .liste_2{
+        width: 100%;
         gap: 6vh; 
         justify-content: flex-start;  
         flex-direction: column;   
@@ -825,7 +846,7 @@ footer{
     }
 
     .titre_hebergements{
-        margin-left: 0;
+       
         font-size: 6.3vw;
     }
 
@@ -833,20 +854,22 @@ footer{
         margin: 3.5vh 3vw 3vh 2vw;
     }
     .flex_column_1{
+        align-items: center;
         gap: 6vh;
         width: 100%;
     }
     .flex_column_2{
+        align-items: center;
         width: 100%;
         gap: 6vh;
     }
     .descriptif{
-        width: 95vw;
+        width: 93%;
         height: 61.2vw;
-        padding: 1.2vw 1.8vw 1.1vw 1.3vw;
+        padding: 9px;
         margin-bottom: 0;
         gap: 0.3vh;
-        border-radius: 47.2px;
+        border-radius: 6vw;
         justify-content: flex-start;
     }
     .lien_filtre{
@@ -854,21 +877,21 @@ footer{
     }
 
     .photo{
-        width: 95.1vw;
+        width: 100%;
         height: 40vw;
-        border-top-left-radius: 47.2px;
-        border-top-right-radius: 47.2px;
+        border-top-left-radius: 4vw;
+        border-top-right-radius: 4vw;
         background-size: contain;
     }
 
     .descriptif_haute{
-        border-radius: 47.2px;
+        border-radius: 6vw;
         width: 95vw;
         height: 58vw;
     }
 
     .descriptif_petite{
-        border-radius: 47.2px;
+        border-radius: 6vw;
         width: 95vw;
         height: 58vw;
     }
@@ -885,8 +908,12 @@ footer{
         width: 95.1vw;
         height: 40vw;
         background-size: contain;
-        border-top-left-radius: 47.2px;
-        border-top-right-radius: 47.2px;
+        border-top-left-radius: 6vw;
+        border-top-right-radius: 6vw;
+    }
+    .photo_fin{
+        border-top-left-radius: 6vw;
+        border-top-right-radius: 6vw;
     }
 
     .afficher_plus{
@@ -914,18 +941,16 @@ footer{
 
     .h3_activites{
         font-size: 4.7vw;
-        margin: 3.7vh 0.2vw 0.6vh 3.3vw;
+        
     }
 
     .liste_activites{
-        gap: 6vh;
-        align-items: flex-start;
-        justify-content: flex-start;
-
+        gap: 6vh; 
     }
 
     
     .flex_column_0{
+        width: 100%;
         align-items: flex-start;
         gap: 6vh;
     }
@@ -942,117 +967,47 @@ footer{
 
     }
 }
+@media screen and (max-width: 420px){
+    .h3_activites{
+        margin-top: 4px;
+    }
+}
 
-@media screen and (max-width:413px){
+@media screen and (max-width: 300px) {
 
-    .photo{
-        height: 20vh;
-    }
-    .descriptif{
-        height: 32vh;
+    .BOOKI{
+    width: 58vw;
 
     }
-    .descriptif_haute{
-        height: 32vh;
+    .flex_column_1,.flex_column_0, .flex_column_2, .liste_activites, .liste_1, .liste_2{
+        gap: 3vh;
     }
-
-    .descriptif_petite{
-        height: 32vh;
+    .lien_filtre{
+        border-width: 0.5px;
     }
-    
-    .photo_fin{
-        height: 20vh;
-        background-size: contain;
+    .flex_column,.h3_activites, footer, #activites, .flex_align, .partie_recherche, .legende_2, .legende_3, .partie_filtres{
+        margin-top: 0;
     }
-
-    .photo_haute{
-        height: 20vh;
-        background-size: contain;
-    }
-    .flex_align{
+    .liste_plus_populaires{
         padding: 0;
     }
-
-    .map-marker{
+    
+    .descriptif{
         padding: 2vw;
     }
 
-    .barre{
-        padding: 2vw;
-        width: 28vw;
+    .partie_filtres{
+        margin-bottom: 0;
     }
-
-    .container_liens_header{
-        margin: 0vh 2vw;
-    }
-}
-
-@media screen and (max-width:342px){
-
-    .descriptif_2{
-        height: 15.2vh;
-    }
-    .photo_pop{
-        height: 15vh;
-}
-
-    .legende_2{
-    font-size: 1.746vh;
-}
-li, a{
-    font-size: 5vw;
-}
-p, h3{
-    font-size: 4.6vw;
-}
-
-.titre_pop, .titre_hebergements, h2{
-    font-size: 9vw;
-}
-
-.titre_filtre{
-    font-size: 7vw;
-}
-
-.legende_3, .legende_1, .h3_activites, .afficher_plus{
-    font-size: 5.9vw;
-}
- .legende_2{
-     font-size: 5.2vw;
- }
- .etoile, .logO, .map-marker{
-     width: 5vw;
- }
-
- .logo_filtre{
-    width: 4vw;
-    height: 2.5vh;
-    padding: 2vw;
- }
- 
- button, .barre{
-     font-size: 4.4vw;
- }
-
- .titre_recherche{
-     font-size: 9.8vw;
- }
- .BOOKI{
-     width: 50vw;
- }
- .recherche{
-     overflow: auto;
- }
-}
-
-@media screen and (max-width:136px) {
-    .lien_filtre{
-        border: 0;
+    .info{
+        margin: 0;
     }
     .logo_info{
-        border: 0;
-        width: 2vw;
-        height: 1.3vh;
+        width: 1.4vw; height: 1vh;
+        padding: 1vw;
+        border-width: 0.5px;
     }
-    
+    .descriptif_petite, .descriptif_haute {
+        height: 53vw;
+    }
 }
