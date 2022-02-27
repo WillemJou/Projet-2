@@ -193,21 +193,8 @@ button{
     padding: 1px 14px 1px 0;
     border-color: #f2f2f2;
     border-radius: 45px;
-    font-weight: bold;  
-}
-
-.lien_filtre :hover {
-    transform: rotate(360deg);
-    transition-duration: 2s;
-}
-
-.filtres :hover{
-    border-color: #0065FC;
-    border-width: 1px;    
-}
-
-.espace_filtre{
-    padding: 0 0.4vw ;
+    font-weight: bold; 
+    transform: rotate(360deg); 
 }
 
 .logo_filtre{
@@ -216,12 +203,17 @@ button{
     background-color:#deebff;
     width: 22px; height: 22px;
     object-fit: contain;
+    transition-duration: 1s;
 }
 
-.logo_filtre :hover{
-    border-color: #0065FC;  
+a :hover .logo_filtre{
+    transform: rotate(360deg); 
+     
 }
 
+.espace_filtre{
+    padding: 0 0.4vw ;
+}
 
 .logO{
     width: 19px; 
@@ -635,6 +627,11 @@ footer{
         font-size: 3vw;
     }
     
+    .grid{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
 
     .partie_filtres{
         align-items: flex-start;
@@ -887,13 +884,13 @@ footer{
     .descriptif_haute{
         border-radius: 6vw;
         width: 95vw;
-        height: 58vw;
+        height: 52vw;
     }
 
     .descriptif_petite{
         border-radius: 6vw;
         width: 95vw;
-        height: 58vw;
+        height: 52vw;
     }
     
     .photo_fin{
