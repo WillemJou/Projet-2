@@ -9,22 +9,22 @@ body{
 
 
 .flex_filtres{
-    display: flex;
-    align-items: center;
-    gap: 4vw;
+        display: flex;
+        align-items: center;
+        gap: 5%;
 }
 
 .flex_column_0{
     display: flex;
     flex-direction: column;
-    margin-left: 2vw;
+    margin-left: 5%;
 }
    
 .flex_column{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 1.5vh 3vw 1vh 1vw;
+    margin: 1.5% 3% 1% 1%;
 }
 .flex_column_3{
     display: flex;
@@ -48,13 +48,13 @@ body{
 
 h2{
     font-weight: 800;
-    padding-bottom: 2vh;
+    padding-bottom: 2%;
 }
 
 
 .titre_pop{
     font-weight: 800;
-    margin-left: 0.2vw;
+    margin-left: 0.2%;
 }
 h3{
     font-weight: 700;
@@ -62,7 +62,7 @@ h3{
 }
 .h3_activites{
     font-weight: 800;
-    margin: 1.7vh 0 0.6vh 0.7vw;
+    margin: 1.7% 0 0.6% 0.7%;
     font-size: 19px;
 }
 
@@ -104,11 +104,12 @@ header{
 }
 
 .container{
-    display: flex;   
+    display: flex;
+    width: 20%;   
 }
 
 .container_liens_header{
-    width: 12vw;   
+    width: 50%;   
     display: flex;
     align-items: center;
     border-top: transparent solid 2px;
@@ -132,14 +133,14 @@ a:hover{
 .partie_recherche{
     display: flex;
     flex-direction: column;
-    margin: 2vh 2.5%;
+    margin: 2% 2.5%;
 
 }
 .recherche{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 1.5vw;
+    padding-top: 1.5%;
 }
 
 .barre{
@@ -178,14 +179,12 @@ button{
     display: flex;
     border-color:#f2f2f2;
     border-radius: 39px;
-   gap: 3vw;   
-}
-
-.flex_filtres{
-   display: flex;
+   gap: 2%;  
+   margin: 25px 0; 
 }
 
 .lien_filtre{
+    white-space: nowrap;
     display: flex;
     align-items: center;
     border-style: solid;
@@ -212,7 +211,7 @@ a :hover .logo_filtre{
 }
 
 .espace_filtre{
-    padding: 0 0.4vw ;
+    padding: 0 0.4% ;
 }
 
 .logO{
@@ -239,7 +238,7 @@ a :hover .logo_filtre{
 .info{
     display: flex;
     align-items: center;
-    margin: 2vh 2.5%;
+    margin: 2% 0;
 }
 .plus{
     display: flex;
@@ -259,14 +258,14 @@ main{
    flex-direction: column;
     background-color: #f2f2f2;
     border-radius: 21px;
-    padding: 3vh 2vw 3vh 0;
+    padding: 3% 3% 5% 0;
 }
 
 .les_plus_populaires{
     display: flex;
     width: 28%;
     flex-direction: column;
-    padding: 3.5vh 2.5vw 5vh 2.5vw;
+    padding: 3.5% 2.5% 5% 2.5%;
     background-color: #f2f2f2;
     border-radius: 21px;
     border-radius: 21px;
@@ -275,24 +274,24 @@ main{
 .mis_en_page{
     display: flex;
     flex-wrap: nowrap;
-    margin-bottom: 4vh;
+    margin-bottom: 4%;
     justify-content: space-between;
 }
 
 .liste_1{
     display: flex;
-    gap: 2vw; 
+    gap: 2%; 
 }
 
 .liste_2{
     display: flex;
-    gap: 2vw; 
+    gap: 2%; 
 }
 
 #activites{
     display: flex;
     flex-direction: column;
-    margin: 2vh 0;
+    margin: 2% 0;
 }
 .descriptif{
 
@@ -301,7 +300,7 @@ display: flex;
     justify-content: space-evenly;
     background-color: white;
     border-radius: 20.2px;
-    margin-bottom: 4vh;
+    margin-bottom: 4%;
     cursor: pointer;
     padding: 5px;
     box-shadow: 1px 1px 12px #1d1d1d1c;
@@ -315,7 +314,7 @@ display: flex;
         justify-content: space-evenly;
         background-color: white;
         border-radius: 20.2px;
-        margin-bottom: 4vh;
+        margin-bottom: 4%;
         cursor: pointer;
         padding: 5px;
         box-shadow: 1px 1px 12px #1d1d1d1c;
@@ -330,7 +329,7 @@ display: flex;
     border-radius: 20.2px;  
     cursor: pointer;
     box-shadow:1px 1px 12px #1d1d1d1c;
-    padding: 0.3vw 0.3vw 0.2vw 0.3vw;
+    padding: 5px;
     height: 150px;
     
 }
@@ -358,7 +357,7 @@ display: flex;
 }
 
 .legende_1{
-    margin-top: 0.3vh;
+    margin-top: 0.3%;
     margin-bottom: 0;
   font-size: 18px;
   font-weight: 800;
@@ -367,7 +366,7 @@ display: flex;
 
 .legende_2{
     display: flex;
-    margin-top: 0.7vh;
+    margin-top: 0.7%;
     margin-bottom: 0;
     font-size: 17px;
    
@@ -392,8 +391,8 @@ display: flex;
 
 .liste_plus_populaires{
     display: flex;
-    flex-flow:column wrap;
-    gap:4vh;
+    flex-flow:column nowrap;
+    gap:50px;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
     background-color: #f2f2f2;
@@ -442,8 +441,8 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: #f2f2f2;
-    margin-top: 6vh;
-    padding: 1vh 13.5vw 3.8vh 5.5vw;
+    margin-top: 6%;
+    padding: 1% 13.5% 3.8% 5.5%;
     margin-left: 0;
     margin-bottom: 0;
 }
@@ -453,57 +452,92 @@ footer{
     display: flex;
     flex-direction: column;    
 }
-@media screen and (max-width:1638px){
-    .liste_activites{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3vw;
-    }
-
-    .flex_column_2{
-        flex-direction: row;
-        gap: 3vw;
-    }
+@media screen and (max-width:1632px){
+   .descriptif_haute{
+       width: 308px;
+       height: 479px;
+   }
+   .photo_haute{
+       width: 308px;
+       height: 426px;
+   }
+   .descriptif_petite{
+       width: 276px; height: 191px;
+   }
+   .photo_fin{
+       height: 142px;
+   }
    
 }
-
-@media screen and (max-width:1296px){
-
-    .mis_en_page{
-        flex-direction: column;
-        gap: 3vh;
+@media screen and (max-width:1300px){
+    .legende_1{
+        font-size: 17px;
     }
-
-    #hebergements{
-        width: 98%;
+    .descriptif{
+        height: 160px;
     }
-    .les_plus_populaires{
-        width: 95%;
-    }
-
-    .liste_plus_populaires{
-        flex-flow: row nowrap;
-        flex-direction: row;
-    }
-
-}
-
-@media screen and (max-width:1272px) {
-    .flex_column_2{
-        flex-direction: column;
-    }
-    .flex_column_1{
-       flex-direction: column;
-    }
-}
-@media screen and (max-width:1191px){
-
-    .liste_plus_populaires{
-        flex-flow: row wrap;
-        justify-content: center;
+    .photo{
+        height: 99px;
     }
     .descriptif_2{
-        width: 40%;
+        height: 108px;
+    }
+    .photo_pop{
+        height: 108px; width: 105px;
+    }
+    .liste_plus_populaires{
+        gap: 25px
+    }
+    .photo_haute{
+        width: 200px;
+        height: 333px;
+    }
+    .descriptif_haute{
+        width: 200px;
+    height: 386px;
+    }
+    .descriptif_petite{
+        width: 211px;
+    height: 172px;
+    }
+    .photo_fin{
+        height: 125px;
+    }
+    .h3_activites{
+        font-size: 16px;
+    }
+    .container{
+        width: 32%;
+    }
+}
+
+@media screen and (max-width:1204px) {
+    .legende_1{
+        font-size: 15px;
+    }
+    .legende_2{
+        font-size: 15px;
+    }
+    .legende_3{
+        font-size:15px
+    }
+}
+@media screen and (max-width:1076px){
+
+    .legende_1{
+        font-size: 14px;
+    }
+    .legende_2{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1012px){
+
+    .legende_1{
+        font-size: 13px;
+    }
+    .legende_2{
+        font-size: 13px;
     }
 }
 
@@ -516,45 +550,40 @@ footer{
     main{
         margin: 0;
     }
-
-    .grid{
-        display: grid;
-        grid-template-rows: 31vh 30vh 36vh;
-        grid-template-columns: 38vw 38vw;
-        gap: 6vw;
     
+    .les_plus_populaires{
+        width: 100%;
+        padding: 5% 0;
     }
 
-    .container_liens_header{
-        width: 20vw;
+    .mis_en_page{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
     }
-
     .partie_recherche{
+        margin-left: 0;
         align-items: center;
     }
-    .liste_1, .liste_2{
-        flex-direction: column;
+    .flex_filtres{
+        flex-wrap: wrap;
     }
-
-
     .flex_column_0{
+        margin-left: 0;
         align-items: center;
     }
 
     .plus{
         justify-content: center;
-        gap: 2vw;
+        gap: 2%;
     }
     .flex_column{
-        margin: 1.5vh 3vw 3vh 2vw;
-    }
-    .flex_filtres{
-        flex-wrap: wrap;
-    
+        margin: 1.5% 3% 3% 2%;
     }
 
     .partie_filtres{
         gap: 0;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
@@ -566,19 +595,19 @@ footer{
     .titre_filtre{
         text-align: middle;
     }
-
-    .mis_en_page{
-        flex-direction: column;
-    }
     
     .afficher_plus{
         display: flex;
     }
 
     .liste_plus_populaires{
+        gap: 2%;
         flex-flow: row;
         flex-wrap: wrap;
         justify-content: center
+    }
+    #hebergements{
+        padding: 5% 0;
     }
 
     #activites{
@@ -590,71 +619,82 @@ footer{
         margin: 0;
     }
 
-    .flex_column_2{
-        flex-direction: column;
-    }
-
    .descriptif{
     width: 100%;
     height: 100%;
-
    }
 
     .descriptif_2{
-        width: 489px;
-        height: 216px;
-        padding: 0.7vw 0.8vw 0.5vw 0.7vw;
+        width: 291px;
+        height: 134px;
+        padding: 0.7% 0.8% 0.5% 0.7%;
     }
    
     .photo_pop{
-        height: 214px;
+        height: 131px;
     }
     .photo{
         height: 166px;
     }
-}
-
-@media screen and (max-width:979px){
-
-    .flex_column_2{
-        flex-direction: column;
+    #hebergements{
+        width: 100%;
     }
+    .liste_activites{
+        flex-flow: row wrap;
+    }
+    .flex_column_1{
+        flex-direction: column
+    }
+    .flex_column_2{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .descriptif_haute{
+        width: 199px;
+    height: 386px;
+    }
+    .photo_haute{
+        width: 198px
+    }
+    .photo_fin{
+    width: 253px;
+    }
+    .descriptif_petite{
+        width: 253px;
+    }
+    .liste_activites{
+        justify-content: center;
+        gap: 20px;
+    }
+
 }
+
 
 @media screen and (max-width:768px) {
 
     .BOOKI{
-        font-size: 3vw;
+        font-size: 3%;
     }
-    
-    .grid{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
+    .recherche{
+        padding: 5.5% 0px;
     }
 
     .partie_filtres{
         align-items: flex-start;
     }
         .legende_1{
-            font-size: 4.7vw;
+            font-size: 32px;
         }
 
         .legende_3{
-            font-size: 4.7vw;
+            font-size: 36px;
+    font-weight: 700;
         }
-            
-    h2{
-        margin-left: 4vw;
-        padding-bottom: 0;
-        font-size: 5.7vw;
-    }
 
-    
     main{
         display: block;
-        width: 100vw;
-        margin: 3vh 0;
+        width: 100%;
+        margin: 3% 0;
         align-content: stretch
     }
     
@@ -664,8 +704,15 @@ footer{
     }
 
     #activites{
-        gap: 4vh;
-        margin: 10vh 0;
+        gap: 4%;
+        margin: 10% 0;
+    }
+    .info{
+        font-size: 70%;
+    }
+    .partie_recherche{
+        margin: 2% 10.5%;
+        align-items: flex-start;
     }
 
     .container{
@@ -674,13 +721,14 @@ footer{
     }
 
     .container_liens_header {
+        font-size: 24px;
         width: 100%;
         display: flex;
         align-items: center;
        border-top: none 0;
         border-bottom: transparent solid 2px;
         justify-content: center;
-        padding-bottom: 2vh; 
+        padding-bottom: 2%; 
     }
 
     .container_liens_header:hover{
@@ -691,21 +739,21 @@ footer{
 
      a{
         border-top: none 0;
-        font-size: 2.7vw;
+        font-size: 20px;
         border-bottom: transparent solid 2px;
      }
      p, .p_info{
-         font-size: 2.7vw;
+         font-size: 20px;
      }
 
      .BOOKI{
-         margin: 4vw;
-         padding-left: 10vw;
+         margin: 4%;
+         padding-left: 10%;
      }
 
     .titre_filtre{
-        margin: 3vh 3vw;
-        font-size: 4vw;
+        margin: 3% 3%;
+        font-size: 28px;
     }
     
     .flex_filtres{
@@ -726,72 +774,73 @@ footer{
 
     .liste_plus_populaires{
         align-items: center;
-        padding-bottom: 4vh;
-        gap: 3vh;  
+        padding-bottom: 4%;
+        gap: 25px;  
     }
 
     .titre_pop{
+        font-size: 38px;
        padding-bottom: 27px;
     }
     
     button{
         position: relative;
-        right: 6vw;
+        right: 6%;
         background-color: #0065FC;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: 32px;
         background-image: url(img/magnifying-glass.png);
-        padding: 4.2vw;
+        padding: 36px;
         border: #f2f2f2 1px solid;
-        border-radius: 12px;
+        border-radius: 17px;
     }
     .hidden{
         display:none;
     }   
      .logo_filtre{
-        width: 3vw;
-        height: 0%;
-        padding: 2vw;
-        border-radius: 7vw;
+        width: 26px;
+    height: 27px;
+    padding: 13px;
+    border-radius: 89px;
     }
     .map-marker{
-        height: 5vw;
-    padding: 1.9VW 2.9vw;
+        height: 5%;
+    padding: 25px 25px;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
     }
 
     .logO{
-        width: 5vw;  
+        width: 35px;  
     }
     
     .barre{
-        width: 58vw;
-        height: 4.7vw;
-        padding: 1.9vw;
-        font-size: 4vw;
+        width: 384px;
+    padding: 14px;
+    font-size: 39px;
     }
 
     .descriptif_2{
         width: 93%;
-    height: 37.2vw;
-    padding: 1.2vw 1.8vw 1.1vw 1.3vw;
-    border-radius: 6vw;
+        height: 204px;
+        padding: 9px;
+        border-radius: 29px;
 
     }
 
     .photo_pop{   
         background-size: contain;
-        border-bottom-left-radius: 5vw;
-        border-top-left-radius: 5vw;
-        height: 37vw;
-        width: 36vw;
+        border-bottom-left-radius: 17px;
+        border-top-left-radius: 17px;
+        height: 201px;
+    width: 239px;
       
     }
 
     .plus{
         justify-content: space-between;
-        padding-left: 4vw;
+        padding-left: 4%;
     }
 
     #hebergements {
@@ -802,32 +851,29 @@ footer{
 
     .liste_1{
         width: 100%;
-        gap: 6vh; 
+        gap: 60px; 
         justify-content: flex-start; 
-        flex-direction: column;     
+        flex-direction: column;  
+        padding-bottom: 60px;   
     }
 
     .liste_2{
         width: 100%;
-        gap: 6vh; 
+        gap: 60px; 
         justify-content: flex-start;  
         flex-direction: column;   
     }
     
     .h3_activites{
-        font-size: 4.7vw;
+        font-size: 4.7%;
         font-weight:700;
     }
 
     .legende_2{
-        font-size: 2.7vw;
+        font-size: 20px;
     }
     h3{
-        font-size: 4.7vw;
-    }
-
-    li{
-    font-size: 2.8vw;
+        font-size: 33px;
     }
 
     .flex_align_2{
@@ -844,91 +890,93 @@ footer{
 
     .titre_hebergements{
        
-        font-size: 6.3vw;
+        font-size: 38px;
     }
 
     .flex_column{
-        margin: 3.5vh 3vw 3vh 2vw;
+        margin: 3.5% 3% 3% 2%;
     }
     .flex_column_1{
         align-items: center;
-        gap: 6vh;
+        gap: 60px;
         width: 100%;
     }
     .flex_column_2{
+        flex-direction: column;
         align-items: center;
         width: 100%;
-        gap: 6vh;
+        gap: 60px;
     }
     .descriptif{
         width: 93%;
-        height: 61.2vw;
+        height: 394px;
         padding: 9px;
         margin-bottom: 0;
-        gap: 0.3vh;
-        border-radius: 6vw;
+        gap: 0.3%;
+        border-radius: 33px;
         justify-content: flex-start;
+    }
+    .grid{
+        width: 100%;
     }
     .lien_filtre{
         border-width: 2px;
     }
 
     .photo{
-        width: 100%;
-        height: 40vw;
-        border-top-left-radius: 4vw;
-        border-top-right-radius: 4vw;
+        width: 100%; height: 291px;
+        border-top-left-radius: 33px;
+        border-top-right-radius: 33px;
         background-size: contain;
     }
 
     .descriptif_haute{
-        border-radius: 6vw;
-        width: 95vw;
-        height: 52vw;
+        border-radius: 29px;
+        width: 95%;
+        height: 430px;
     }
 
     .descriptif_petite{
-        border-radius: 6vw;
-        width: 95vw;
-        height: 52vw;
+        border-radius: 6%;
+        width: 95%;
+        height: 430px;
     }
     
     .photo_fin{
-        width:  95.1vw;
-        height: 40vw;
+        width:  100%;
         background-size: contain;
         border-top-left-radius: 47.2px;
         border-top-right-radius: 47.2px;
     }
 
     .photo_haute{
-        width: 95.1vw;
-        height: 40vw;
+        width: 100%;
         background-size: contain;
-        border-top-left-radius: 6vw;
-        border-top-right-radius: 6vw;
+        border-top-left-radius: 29px;
+        border-top-right-radius: 29px;
     }
     .photo_fin{
-        border-top-left-radius: 6vw;
-        border-top-right-radius: 6vw;
+        height: 330px;
+        border-top-left-radius: 29px;
+        border-top-right-radius: 29px;
     }
 
     .afficher_plus{
         justify-content: flex-start;
-        font-size: 4.7vw;
+        font-size: 35px;
     }
 
     .etoile{
-        width: 3.2vw;
-        height: 7.2vw;
+        width: 16px;
+    height: 16px;
     }
 
     .les_plus_populaires{
-        gap: 6vh;
+        gap: 60px;
         align-items: flex-start;
     }
     .titre_recherche{
-        font-size: 5.7vw;
+        font-size: 38px;
         margin-left: 0;
     }
 
@@ -937,47 +985,107 @@ footer{
     }
 
     .h3_activites{
-        font-size: 4.7vw;
+        font-size: 33px;
         
+    }
+    .logo_info{
+        width: 9px; height: 19px;
+        padding: 14px;
+        border-radius: 7px;
     }
 
     .liste_activites{
-        gap: 6vh; 
+        gap: 60px; 
+        margin-top: 20px;
     }
 
     
     .flex_column_0{
         width: 100%;
         align-items: flex-start;
-        gap: 6vh;
+        gap: 30px;
     }
 
     footer{
         flex-direction: column;
         gap: 0;
-        margin-top: 12vh;
-        padding: 1vh 0.5vw 3.8vh 5.5vw;;
+        margin-top: 12%;
+        padding: 1% 0.5% 3.8% 5.5%;;
     }
     
     .article_footer{
-        margin-bottom: 3vh;
+        margin-bottom: 3%;
 
     }
+    h2{
+        font-size: 42px;
+    }
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width:628px){
+    button{
+        background-size: 20px;
+        padding: 25px;
+    }
+
+    .barre{
+        width: 228px;
+    padding: 13px;
+    font-size: 20px;
+    }
+
+    .map-marker{
+        padding: 11px 11px;
+    }
+
+
+    
+}
+@media screen and (max-width: 575px){
     .h3_activites{
         margin-top: 4px;
+    }
+    .legende_3{
+        font-size: 22px;
+    }
+    .legende_2 {
+        font-size: 19px;
+    }
+    .photo_pop{
+        width: 175px;
+    }
+    .legende_1{
+        font-size: 22px;
+    }
+    .photo{
+        height: 213px;
+    }
+    .descriptif{
+        height: 317px;
+    }
+    .h3_activites{
+        font-size: 22px;  
+      }
+      .descriptif_haute, .descriptif_petite{
+          height: 307px;
+      }
+      .photo_fin, .photo_haute{
+          height: 239px;
+      }
+}
+@media screen and (max-width: 397px){
+    .barre{
+        width: 158px;
     }
 }
 
 @media screen and (max-width: 300px) {
 
     .BOOKI{
-    width: 58vw;
+    width: 58%;
 
     }
     .flex_column_1,.flex_column_0, .flex_column_2, .liste_activites, .liste_1, .liste_2{
-        gap: 3vh;
+        gap: 3%;
     }
     .lien_filtre{
         border-width: 0.5px;
@@ -990,7 +1098,7 @@ footer{
     }
     
     .descriptif{
-        padding: 2vw;
+        padding: 2%;
     }
 
     .partie_filtres{
@@ -1000,11 +1108,11 @@ footer{
         margin: 0;
     }
     .logo_info{
-        width: 1.4vw; height: 1vh;
-        padding: 1vw;
+        width: 1.4%; height: 1%;
+        padding: 1%;
         border-width: 0.5px;
     }
     .descriptif_petite, .descriptif_haute {
-        height: 53vw;
+        height: 53%;
     }
 }
