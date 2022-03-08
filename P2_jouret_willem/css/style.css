@@ -705,7 +705,7 @@ footer{
     }
 
     .container_liens_header {
-        font-size: 24px;
+        font-size: 21px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -727,7 +727,7 @@ footer{
         border-bottom: transparent solid 2px;
      }
      p, .p_info{
-         font-size: 20px;
+         font-size: 26px;
      }
 
      .BOOKI{
@@ -767,6 +767,9 @@ footer{
         font-size: 43px;
        padding-bottom: 27px;
     }
+    .hidden{
+        display:none;
+    } 
     
     button{
         position: relative;
@@ -775,14 +778,12 @@ footer{
         background-position: center;
         background-repeat: no-repeat;
         background-size: 32px;
-        background-image: url(img/magnifying-glass-solid.png);
+        background-image: url(/img/magnifying-glass-solid.png);
         padding: 36px;
         border: #f2f2f2 1px solid;
         border-radius: 17px;
     }
-    .hidden{
-        display:none;
-    }   
+     
      .logo_filtre{
         width: 26px;
     height: 27px;
@@ -810,8 +811,8 @@ footer{
     }
     .photo_pop{   
         background-size: contain;
-        border-bottom-left-radius: 31px;
-        border-top-left-radius: 31px;
+        border-bottom-left-radius: 19px;
+        border-top-left-radius: 19px;
         height: 278px;
     width: 239px;
       
@@ -896,13 +897,13 @@ footer{
         padding: 9px;
         margin-bottom: 0;
         gap: 0.3%;
-        border-radius: 33px;
+        border-radius: 26px;
         justify-content: flex-start;
     }
     .descriptif_2{
         width: 92%;
         padding: 12px 5px 6px 14px;
-        border-radius: 42px;
+        border-radius: 26px;
     }
     .grid{
         width: 100%;
@@ -913,28 +914,28 @@ footer{
 
     .photo{
         width: 100%; height: 245px;
-        border-top-left-radius: 33px;
-        border-top-right-radius: 33px;
+        border-top-left-radius: 19px;
+        border-top-right-radius: 19px;
         background-size: contain;
     }
 
     .descriptif_haute{
-        border-radius: 47px;
+        border-radius: 26px;
         width: 95%;
         height: 400px;
        
     }
     .descriptif_gros{
         height: 400px; width: 95%;
-        border-radius: 47px;
+        border-radius: 26px;
     }
     .descriptif_fine{
         height: 400px; width: 95%;
-        border-radius: 47px;
+        border-radius: 26px;
     }
 
     .descriptif_petite{
-        border-radius: 47px;
+        border-radius: 26px;
         width: 95%;
         height: 400px;
        
@@ -943,28 +944,28 @@ footer{
     .photo_fin{
         width:  100%; height: 77%;
         background-size: contain;
-        border-top-left-radius: 47.2px;
-        border-top-right-radius: 47.2px;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
     }
     .photo_fine{
         width:  100%; height: 77%;
         background-size: contain;
-        border-top-left-radius: 47.2px;
-        border-top-right-radius: 47.2px;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
     }
 
     .photo_gros{
         width:  100%; height: 77%;
         background-size: contain;
-        border-top-left-radius: 47.2px;
-        border-top-right-radius: 47.2px;
+        border-top-left-radius: 26px;
+        border-top-right-radius: 26px;
     }
 
     .photo_haute{
         width: 100%; height: 77%;
         background-size: contain;
-        border-top-left-radius: 29px;
-        border-top-right-radius: 29px;
+        border-top-left-radius: 19px;
+        border-top-right-radius: 19px;
     }
 
     .afficher_plus{
@@ -982,7 +983,7 @@ footer{
         align-items: flex-start;
     }
     .titre_recherche{
-        font-size: 38px;
+        font-size: 40px;
         margin-left: 0;
     }
 
@@ -1084,11 +1085,171 @@ footer{
           height: 239px;
       }
 }
+@media screen and (max-width:426px){
+
+    .titre_recherche, .titre_activites, h3, .titre_pop, .titre_filtre, .titre_hebergements {
+        font-size: 24px;
+    }
+    
+    p, .p_info, .container_liens_header, a{
+        font-size: 16px;
+    }
+    .photo_pop{
+        height: 192px;
+    }
+    .legende_3, .legende_1, .h3_activites, .afficher_plus{
+        font-size: 20px;
+    }
+    .legende_2{
+        font-size: 16px;
+    }
+    .etoile{
+        width: 16px;
+        height: 13px;
+    }
+    .photo, .photo_fin, .photo_fine, .photo_gros, .photo_haute{
+        height: 139px;
+    }
+    .descriptif {
+        height: 232px;
+    }
+    .descriptif_fine, .descriptif_gros, .descriptif_haute, .descriptif_petite{
+        height: 195px;
+    }
+    .liste_1, .liste_2{
+        gap: 29px;
+        padding-bottom: 29px;
+        margin-bottom: 0;
+    }
+    .logO{
+        width: 23px;
+    }
+}
 @media screen and (max-width: 397px){
     .barre{
         width: 158px;
     }
 }
+@media screen and (max-width:376px){
+
+    .titre_recherche, .titre_activites, h3, .titre_pop, .titre_filtre, .titre_hebergements {
+        font-size: 20px;
+    }
+    
+    p, .p_info, .container_liens_header, a{
+        font-size: 14px;
+    }
+    .logo_filtre{
+        padding: 10px; width: 17px; height: 22px;
+    }
+    button{
+        padding: 22px;
+    }
+    .logo_info{
+        width: 11px;
+        height: 12px;
+    }
+    .map-marker{
+        padding: 10px 11px;
+    }
+    .photo_pop{
+        height: 151px; width: 128px;
+    }
+    .legende_3, .legende_1, .h3_activites, .afficher_plus{
+        font-size: 20px;
+    }
+    .legende_2{
+        font-size: 16px;
+    }
+    .etoile{
+        width: 16px;
+        height: 13px;
+    }
+    .barre{
+        padding: 12px;
+        font-size: 17px;
+    }
+    .photo, .photo_fin, .photo_fine, .photo_gros, .photo_haute{
+        height: 139px;
+    }
+    .descriptif {
+        height: 232px;
+    }
+    .descriptif_fine, .descriptif_gros, .descriptif_haute, .descriptif_petite{
+        height: 195px;
+    }
+    .liste_1, .liste_2{
+        gap: 29px;
+        padding-bottom: 29px;
+        margin-bottom: 0;
+    }
+    .liste_activites, .flex_column_1, .flex_column_2{
+        gap: 29px;
+    }
+}
+@media screen and (max-width: 321px){
+    .titre_recherche, .titre_activites, h3, .titre_pop, .titre_filtre, .titre_hebergements {
+        font-size: 19px;
+    }
+    
+    p, .p_info, .container_liens_header, a{
+        font-size: 11px;
+    }
+    
+    .logo_filtre{
+        padding: 10px; width: 17px; height: 22px;
+    }
+    button{
+        padding: 22px;
+    }
+    .logo_info{
+        width: 11px;
+        height: 12px;
+    }
+    .map-marker{
+         width: 15px; padding: 14px 11px;
+    }
+    .photo_pop{
+        height: 126px;
+        width: 110px;
+    }
+    .legende_3, .legende_1, .h3_activites, .afficher_plus{
+        font-size: 16px;
+    }
+    .legende_2{
+        font-size: 13px;
+    }
+    .etoile{
+        width: 16px;
+        height: 13px;
+    }
+    .barre{
+        padding: 12px;
+        font-size: 17px;
+    }
+    .photo, .photo_fin, .photo_fine, .photo_gros, .photo_haute{
+        height: 139px;
+    }
+    .descriptif {
+        height: 232px;
+    }
+    .descriptif_2{
+        padding: 7px 5px 2px 7px;
+
+    }
+    .descriptif_fine, .descriptif_gros, .descriptif_haute, .descriptif_petite{
+        height: 195px;
+    }
+    .liste_1, .liste_2{
+        gap: 29px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .liste_activites, .flex_column_1, .flex_column_2{
+        gap: 29px;
+    }
+}
+
 
 @media screen and (max-width: 300px) {
 
