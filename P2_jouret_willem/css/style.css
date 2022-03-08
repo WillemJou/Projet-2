@@ -52,16 +52,16 @@ article{
 }
 
 h2{
-    font-weight: 800;
+    font-weight: 500;
     padding-bottom: 2%;
 }
 
 .titre_activites{
-    font-weight: 800;
+    font-weight: 500;
     padding-bottom: 2%;
 }
 .titre_pop{
-    font-weight: 800;
+    font-weight: 500;
     margin-left: 0.2%;
     white-space: nowrap;
     margin-bottom: 7%;
@@ -1249,7 +1249,6 @@ footer{
         gap: 29px;
     }
 }
-
 
 @media screen and (max-width: 300px) {
 
