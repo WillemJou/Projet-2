@@ -1085,6 +1085,12 @@ footer{
           height: 239px;
       }
 }
+
+@media screen and (max-width:510px){
+    .titre_pop{
+        font-size: 30px;
+    }
+}
 @media screen and (max-width:426px){
 
     .titre_recherche, .titre_activites, h3, .titre_pop, .titre_filtre, .titre_hebergements {
