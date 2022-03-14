@@ -1250,14 +1250,14 @@ footer{
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 301px) {
 
     .BOOKI{
     width: 58%;
 
     }
     .flex_column_1,.flex_column_0, .flex_column_2, .liste_activites, .liste_1, .liste_2{
-        gap: 3%;
+        padding-bottom: 11px;
     }
     .lien_filtre{
         border-width: 0.5px;
