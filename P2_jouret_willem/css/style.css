@@ -570,6 +570,7 @@ footer{
         }
 
         .legende_3{
+            text-overflow: ellipsis;
             font-size: 36px;
     font-weight: 700;
         }
@@ -703,7 +704,7 @@ footer{
     }
     
     .barre{
-        width: 384px;
+        width: 60%;
     padding: 19px;
     font-size: 29px;
     }
@@ -723,6 +724,7 @@ footer{
     }
 
     .plus{
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-left: 4%;
     }
@@ -754,6 +756,9 @@ footer{
     }
 
     .legende_2{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         font-size: 25px;
         margin-top: 1.7%;
     }
@@ -779,6 +784,9 @@ footer{
     }
 
     .flex_column{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         margin: 3.5% 3% 3% 2%;
     }
     .flex_column_1{
