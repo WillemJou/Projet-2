@@ -63,8 +63,8 @@ h2{
 .titre_pop{
     font-weight: 500;
     margin-left: 0.2%;
-    white-space: nowrap;
     margin-bottom: 7%;
+    white-space: nowrap;
 
 }
 h3{
@@ -102,6 +102,7 @@ a{
 
 .afficher_plus{
     font-weight: bold;
+    padding-left: 40px;
 }
 
 
@@ -301,7 +302,7 @@ main{
 .liste_2{
     display: flex;
     gap: 4%; 
-    margin-bottom: 4%;
+    margin-bottom: 14%;
 }
 
 #activites{
@@ -317,16 +318,16 @@ display: flex;
     border-radius: 20.2px;
     padding: 5px 5px 1px 5px;
     box-shadow: 1px 1px 12px #1d1d1d1c;
-    width: 100%;
+    width: 100%; height: 200px;
 }
 .descriptif_2{
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 20.2px;
-    padding: 5px 5px 1px 5px;
+    padding: 5px 5px 5px 5px;
     box-shadow: 1px 1px 12px #1d1d1d1c;
-    width: 100%;
+    width: 100%; height: 155px;
 }
 
 
@@ -369,7 +370,7 @@ display: flex;
 .legende_1{
     margin-top: 0.3%;
     margin-bottom: 0;
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 800;
    
 }
@@ -378,7 +379,7 @@ display: flex;
     display: flex;
     margin-top: 0.7%;
     margin-bottom: 0;
-    font-size: 17px;
+    font-size: 1em;
    
 }
 
@@ -409,7 +410,7 @@ display: flex;
 }
 
 .liste_activites{
-    width: 100%; height: 700px;
+    width: 100%; height: 65%;
     display: flex;
     gap: 3%;
     justify-content: space-between;
@@ -418,7 +419,7 @@ display: flex;
 
 .photo{
     width: 100%;
-    height: 166px;
+    height: 51%;
     border-top-left-radius:17px;
     border-top-right-radius: 17px;
     object-fit: cover;   
@@ -445,8 +446,8 @@ display: flex;
 }
 
 .photo_pop{
-    width: 146px;
-    height: 149px;
+    width: 40%;
+    height: 100%;
     border-bottom-left-radius:17px;
     border-top-left-radius:17px;
     object-fit: cover;
@@ -482,6 +483,10 @@ footer{
         justify-content: space-around;
 
     }
+
+    .photo_haute{
+        height: 85%;
+    }
     .container{
         width: 42%;
     }
@@ -490,7 +495,7 @@ footer{
     }
     
    .h3_activites{
-       font-size: 14px;
+       font-size: 0.8em;
    }
    .partie_recherche{
        align-items: center;
@@ -538,18 +543,19 @@ footer{
    }
    .titre_recherche{
        padding-bottom: 0;
+       text-align: center;
        margin-top: 0;
    }
    .descriptif{
        width: 236px;
    }
-   .photo_pop{
-       width: 79px;  height: 123px;
-   }
+   
    .plus{
        gap: 8%;
    }
-  
+  .afficher_plus{
+      text-align: center;
+  }
 }
 
 
@@ -566,12 +572,12 @@ footer{
         align-items: flex-start;
     }
         .legende_1{
-            font-size: 32px;
+            font-size: 1em;
         }
 
         .legende_3{
             text-overflow: ellipsis;
-            font-size: 36px;
+            font-size: 1em;
     font-weight: 700;
         }
 
@@ -598,7 +604,7 @@ footer{
     }
     .partie_recherche{
         margin: 2% 10.5%;
-        align-items: flex-start;
+
     }
 
     .container{
@@ -629,7 +635,8 @@ footer{
         border-bottom: transparent solid 2px;
      }
      p, .p_info{
-         font-size: 26px;
+         font-size: 1.2em;
+         text-align: center;
      }
 
      .BOOKI{
@@ -639,7 +646,7 @@ footer{
 
     .titre_filtre{
         margin: 3% 3%;
-        font-size: 28px;
+        font-size: 1.7em;
     }
     
     .flex_filtres{
@@ -666,7 +673,7 @@ footer{
     }
 
     .titre_pop{
-        font-size: 43px;
+        font-size: 1.8em;
        padding-bottom: 27px;
     }
     .hidden{
@@ -679,11 +686,11 @@ footer{
         background-color: #0065FC;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 28px;
+        background-size: 34%;
         background-image: url(../img/magnifying-glass.png);
-        padding: 36px;
+        padding: 9%;
         border: #f2f2f2 1px solid;
-        border-radius: 17px;
+        border-radius: 28%;
     }
      
      .logo_filtre{
@@ -694,9 +701,9 @@ footer{
     }
     .map-marker{
         height: 5%;
-    padding: 25px 25px;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
+    padding: 5% 7%;
+    border-top-left-radius: 24%;
+    border-bottom-left-radius: 24%;
     }
 
     .logO{
@@ -705,8 +712,8 @@ footer{
     
     .barre{
         width: 60%;
-    padding: 19px;
-    font-size: 29px;
+    padding: 5%;
+    font-size: 1.2em;
     }
     .flex_column_3{
         margin: 10px 0px 5px 8px;
@@ -715,8 +722,8 @@ footer{
         background-size: contain;
         border-bottom-left-radius: 19px;
         border-top-left-radius: 19px;
-        height: 278px;
-    width: 239px;
+        height: 98%;
+    width: 48%;
       
     }
     .flex_align{
@@ -732,6 +739,7 @@ footer{
     #hebergements {
         background-color: transparent;
         justify-content: flex-start;
+        margin-bottom: 4%;
        
     }
 
@@ -740,14 +748,16 @@ footer{
         gap: 60px; 
         justify-content: flex-start; 
         flex-direction: column;  
-        padding-bottom: 60px;   
+         
     }
 
     .liste_2{
         width: 100%;
         gap: 60px; 
         justify-content: flex-start;  
-        flex-direction: column;   
+        flex-direction: column; 
+        margin-bottom: 0;  
+
     }
     
     .h3_activites{
@@ -758,8 +768,7 @@ footer{
     .legende_2{
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
-        font-size: 25px;
+        font-size: 0.9em;
         margin-top: 1.7%;
     }
     h3{
@@ -780,12 +789,11 @@ footer{
 
     .titre_hebergements{
        
-        font-size: 43px;
+        font-size: 2rem;
     }
 
     .flex_column{
         overflow: hidden;
-        white-space: nowrap;
         text-overflow: ellipsis;
         margin: 3.5% 3% 3% 2%;
     }
@@ -801,7 +809,7 @@ footer{
         gap: 60px;
     }
     .descriptif{
-        width: 93%;
+        width: 97%;
         height: 394px;
         padding: 9px;
         margin-bottom: 0;
@@ -810,19 +818,19 @@ footer{
         justify-content: flex-start;
     }
     .descriptif_2{
-        width: 92%;
+        width: 92%; height: 285px;
         padding: 12px 5px 6px 14px;
         border-radius: 26px;
+        margin-bottom: 4%;
     }
-    .grid{
-        width: 100%;
-    }
+    
     .lien_filtre{
         border-width: 2px;
+        font-size: 0.7em;
     }
 
     .photo{
-        width: 100%; height: 245px;
+        width: 100%; height: 65%;
         border-top-left-radius: 19px;
         border-top-right-radius: 19px;
         background-size: contain;
@@ -879,12 +887,14 @@ footer{
 
     .afficher_plus{
         justify-content: flex-start;
-        font-size: 35px;
+        font-size: 1.7em;
+        margin-top: 09%;
+        padding-left: 0;
     }
 
     .etoile{
-        width: 24px;
-        height: 23px;
+        width: 15px;
+        height: 14px;
     }
 
     .les_plus_populaires{
@@ -892,14 +902,14 @@ footer{
         align-items: flex-start;
     }
     .titre_recherche{
-        font-size: 40px;
+        font-size: 2em;
         margin-left: 0;
     }
 
  
 
     .h3_activites{
-        font-size: 33px;
+        font-size: 1em;
         
     }
     .logo_info{
@@ -939,7 +949,7 @@ footer{
         font-size: 42px;
     }
     .titre_activites{
-        font-size: 42px;
+        font-size: 2em;
         margin-left: 13px;
     }
 }
